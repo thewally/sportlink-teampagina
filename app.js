@@ -28,7 +28,7 @@ function el(tag, attrs, children) {
 
 function section(title, children) {
   return el('section', { class: 'card' },
-    [el('h2', { text: title })].concat(children || []));
+    [el('h2', { class: 'bar', text: title })].concat(children || []));
 }
 
 /** Simple table; head = array of strings, rows = array of arrays of cell content. */
@@ -102,7 +102,7 @@ function renderTeam(d) {
 
   /* 1. Teamtitel */
   nodes.push(el('header', { class: 'team-header' }, [
-    el('h1', { text: d.teamnaam }),
+    el('h1', { class: 'bar', text: d.teamnaam }),
     subtitle ? el('p', { class: 'subtitle', text: subtitle }) : null,
     el('p', { class: 'backlink' }, [el('a', { href: '.', text: '← Alle teams' })])
   ]));
@@ -155,13 +155,12 @@ function renderTeam(d) {
   nodes.push(section(pouleTitel, [
     stand.length
       ? table(
-          ['Positie', 'Team', 'GS', 'GW', 'GL', 'VL', 'Voor', 'Tegen', 'Doelsaldo', 'PT'],
+          ['Positie', 'Team', 'GS', 'GW', 'GL', 'VL', 'V', 'T', 'Doelsaldo', 'PT'],
           stand.map(function (r) {
             return [r.positie, r.teamnaam, r.gespeeldewedstrijden, r.gewonnen,
               r.gelijk, r.verloren, r.doelpuntenvoor, r.doelpuntentegen,
               r.doelsaldo, r.punten];
-          }),
-          function (i) { return String(stand[i].eigenteam) === 'true' ? 'eigenteam' : ''; }
+          })
         )
       : empty('Geen informatie')
   ]));
@@ -258,7 +257,7 @@ function renderOverzicht(index) {
 
   render([
     el('header', { class: 'team-header' }, [
-      el('h1', { text: 'Teams' }),
+      el('h1', { class: 'bar', text: 'Teams' }),
       el('p', { class: 'subtitle', text:
         'Kies een team, of open een pagina direct via ?team=<teamcode> of ?team=<tekst>.' })
     ]),
@@ -274,7 +273,7 @@ function renderDisambiguatie(query, hits) {
   document.title = 'Meerdere teams gevonden';
   render([
     el('header', { class: 'team-header' }, [
-      el('h1', { text: 'Meerdere teams gevonden' }),
+      el('h1', { class: 'bar', text: 'Meerdere teams gevonden' }),
       el('p', { class: 'subtitle', text:
         hits.length + ' teams passen bij “' + query + '”. Kies het juiste team:' })
     ]),
@@ -288,7 +287,7 @@ function renderDisambiguatie(query, hits) {
 function renderFout(msg) {
   document.title = 'Niet gevonden';
   render([
-    el('header', { class: 'team-header' }, [el('h1', { text: 'Niet gevonden' })]),
+    el('header', { class: 'team-header' }, [el('h1', { class: 'bar', text: 'Niet gevonden' })]),
     el('section', { class: 'card' }, [
       el('p', { class: 'error', text: msg }),
       el('p', { class: 'backlink' }, [el('a', { href: '.', text: '← Alle teams' })])
