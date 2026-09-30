@@ -86,13 +86,9 @@ function logoImg(src, alt) {
   });
 }
 
-/** "[logo] Thuisteam - Uitteam [logo]" as one inline element for a table cell. */
-function matchupCell(thuisteam, thuisLogo, uitteam, uitLogo) {
-  return el('span', { class: 'matchup' }, [
-    logoImg(thuisLogo, thuisteam),
-    el('span', { class: 'matchup-teams', text: (thuisteam || '?') + ' - ' + (uitteam || '?') }),
-    logoImg(uitLogo, uitteam)
-  ]);
+/** Centered "Thuisteam - Uitteam" text for the Wedstrijd column. */
+function matchupText(thuisteam, uitteam) {
+  return el('span', { class: 'wedstrijd-text', text: (thuisteam || '?') + ' - ' + (uitteam || '?') });
 }
 
 function svgIcon(cls, markup) {
@@ -192,12 +188,13 @@ function renderTeam(d) {
   var programma = d.programma || [];
   nodes.push(section('Programma', [
     programma.length
-      ? table(['Datum', 'Wedstrijd', 'Tijd', 'Locatie'], programma.map(function (w) {
+      ? table(['Datum', '', 'Wedstrijd', '', 'Locatie'], programma.map(function (w) {
           return [
-            w.datum,
-            matchupCell(w.thuisteam, w.thuisteamLogo, w.uitteam, w.uitteamLogo),
-            w.aanvangstijd,
-            [w.accommodatie, w.veld, w.plaats].filter(Boolean).join(', ')
+            [w.datum, w.aanvangstijd].filter(Boolean).join(' '),
+            logoImg(w.thuisteamLogo, w.thuisteam),
+            matchupText(w.thuisteam, w.uitteam),
+            logoImg(w.uitteamLogo, w.uitteam),
+            w.accommodatie
           ];
         }))
       : empty('Geen informatie')
@@ -207,10 +204,12 @@ function renderTeam(d) {
   var uitslagen = d.uitslagen || [];
   nodes.push(section('Uitslagen', [
     uitslagen.length
-      ? table(['Datum', 'Wedstrijd', 'Uitslag'], uitslagen.map(function (w) {
+      ? table(['Datum', '', 'Wedstrijd', '', 'Uitslag'], uitslagen.map(function (w) {
           return [
             w.datumopgemaakt,
-            matchupCell(w.thuisteam, w.thuisteamLogo, w.uitteam, w.uitteamLogo),
+            logoImg(w.thuisteamLogo, w.thuisteam),
+            matchupText(w.thuisteam, w.uitteam),
+            logoImg(w.uitteamLogo, w.uitteam),
             w.uitslag
           ];
         }))

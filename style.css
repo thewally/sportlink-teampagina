@@ -70,7 +70,8 @@ tbody tr:nth-child(even) td { background: var(--stripe); }
 .empty, .privacy, .note { color: var(--muted); margin: 10px 0 0; padding: 0 16px; font-size: 13px; }
 .error { color: var(--error); margin: 0; padding: 0 16px; }
 
-/* club-/team-logo's in Programma, Uitslagen en Poulestanden */
+/* club-/team-logo's in Programma, Uitslagen en Poulestanden — elk in hun
+   eigen (blanco-header) kolom, net als op de referentiepagina. */
 .team-logo, .team-logo-empty {
   display: inline-block;
   width: 20px;
@@ -79,12 +80,8 @@ tbody tr:nth-child(even) td { background: var(--stripe); }
   object-fit: contain;
   flex: none;
 }
-.matchup {
-  display: inline-flex;
-  align-items: center;
-  gap: 7px;
-  white-space: normal;
-}
+td:has(> .team-logo), td:has(> .team-logo-empty) { text-align: center; }
+.wedstrijd-text { display: block; text-align: center; white-space: normal; }
 
 /* teamfoto / "nog geen foto" leegstand — direct onder de teamtitel */
 .team-photo { margin: 0 0 24px; line-height: 0; }
