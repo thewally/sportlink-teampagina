@@ -2,8 +2,15 @@ name: Sync SportLink data
 
 on:
   schedule:
-    # Twee keer per dag (UTC): 04:10 en 16:10.
-    - cron: '10 4,16 * * *'
+    # 11:00 en 21:00 UTC = 12:00 en 22:00 NL-tijd (wintertijd) / 13:00 en
+    # 23:00 (zomertijd). GitHub-cron kent geen tijdzones en past zich niet
+    # aan zomer-/wintertijd aan.
+    - cron: '0 11,21 * * *'
+    # Zaterdag (wedstrijddag) elk uur van 09:00 t/m 18:00 NL-tijd. 7-17 UTC
+    # dekt zowel zomertijd (UTC 7-16 = 09:00-18:00 NL) als wintertijd
+    # (UTC 8-17 = 09:00-18:00 NL) — in de "verkeerde" jaarhelft draait er
+    # hierdoor één extra, onschuldige sync net buiten het venster.
+    - cron: '0 7-17 * * 6'
   workflow_dispatch:
 
 permissions:
