@@ -90,30 +90,25 @@ tbody tr:nth-child(even) td { background: var(--stripe); }
 .team-photo { margin: 0 0 24px; line-height: 0; }
 .team-photo img { width: 100%; height: auto; display: block; }
 .team-photo-placeholder {
+  position: relative;
   margin: 0 0 24px;
-  padding: 32px 16px;
-  background: #fbfbfb;
+  padding: 40px 16px 32px;
+  min-height: 220px;
+  background: #fff;
   border: 1px solid var(--line);
   text-align: center;
+  overflow: hidden;
 }
-.placeholder-art {
-  position: relative;
-  height: 120px;
-  margin: 0 0 16px;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-}
-.placeholder-art .silhouette {
+.placeholder-bg {
   position: absolute;
   inset: 0;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: center;
-  color: #ececec;
 }
-.placeholder-art .silhouette svg { width: 100%; max-width: 260px; height: auto; }
-.placeholder-art .ball { position: relative; z-index: 1; color: var(--green); }
+.placeholder-bg img { width: 55%; max-width: 420px; height: auto; }
+.placeholder-content { position: relative; z-index: 1; }
+.placeholder-logo { width: 100px; height: auto; margin: 0 auto 14px; display: block; }
 .placeholder-team { margin: 0; font-size: 22px; font-weight: 700; color: #d9720f; }
 .placeholder-msg { margin: 10px auto 0; max-width: 420px; color: #324f73; font-size: 14px; }
 

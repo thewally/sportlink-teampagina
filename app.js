@@ -121,34 +121,25 @@ function gridStatIcon() {
     '<svg viewBox="0 0 40 40" width="22" height="22"><circle cx="12" cy="11" r="3.6" fill="currentColor"/><circle cx="24" cy="11" r="3.6" fill="currentColor"/><circle cx="12" cy="22" r="3.6" fill="currentColor"/><circle cx="24" cy="22" r="3.6" fill="currentColor"/><circle cx="12" cy="33" r="3.6" fill="currentColor"/><circle cx="24" cy="33" r="3.6" fill="currentColor"/></svg>');
 }
 
-/** Generic "no team photo yet" illustration — deliberately not the club crest. */
-function silhouetteIcon() {
-  return svgIcon('silhouette',
-    '<svg viewBox="0 0 220 140" width="220" height="140" aria-hidden="true">' +
-    '<g fill="currentColor">' +
-    '<ellipse cx="35" cy="45" rx="20" ry="22"/><path d="M0 140 C0 95 15 75 35 75 C55 75 70 95 70 140 Z"/>' +
-    '<ellipse cx="185" cy="45" rx="20" ry="22"/><path d="M150 140 C150 95 165 75 185 75 C205 75 220 95 220 140 Z"/>' +
-    '<ellipse cx="80" cy="35" rx="22" ry="24"/><path d="M42 140 C42 90 59 68 80 68 C101 68 118 90 118 140 Z"/>' +
-    '<ellipse cx="140" cy="35" rx="22" ry="24"/><path d="M102 140 C102 90 119 68 140 68 C161 68 178 90 178 140 Z"/>' +
-    '</g></svg>');
-}
-function ballIcon() {
-  return svgIcon('ball',
-    '<svg viewBox="0 0 64 64" width="56" height="56"><circle cx="32" cy="32" r="30" fill="#fff" stroke="currentColor" stroke-width="3"/>' +
-    '<path d="M32 14 L44 23 L39 38 L25 38 L20 23 Z" fill="currentColor"/>' +
-    '<path d="M32 14 V4 M44 23 L53 17 M39 38 L46 53 M25 38 L18 53 M20 23 L11 17" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round"/></svg>');
-}
-
-/** Team photo, or the same "no photo yet" empty state SportLink itself shows. */
+/** Team photo, or the same "no photo yet" empty state vvz49.nl itself shows:
+ * the generic SportLink theme background (assets/placeholder-bg.png, a
+ * template asset from the "Sportlink Club Websites" theme, not club-specific)
+ * with the VVZ'49 crest (assets/vvz49-logo.png) centered on top — these are
+ * literally VVZ'49 combi teams, so the crest is accurate, not decorative. */
 function fotoBlok(d) {
   var foto = d.details && d.details.foto;
   if (foto) {
     return el('div', { class: 'team-photo' }, [el('img', { src: foto, alt: d.teamnaam })]);
   }
   return el('div', { class: 'team-photo-placeholder' }, [
-    el('div', { class: 'placeholder-art' }, [silhouetteIcon(), ballIcon()]),
-    el('p', { class: 'placeholder-team', text: d.teamnaam }),
-    el('p', { class: 'placeholder-msg', text: 'Er is nog geen teamfoto voor dit team beschikbaar in SportLink.' })
+    el('div', { class: 'placeholder-bg' }, [
+      el('img', { src: 'assets/placeholder-bg.png', alt: '', 'aria-hidden': 'true' })
+    ]),
+    el('div', { class: 'placeholder-content' }, [
+      el('img', { class: 'placeholder-logo', src: 'assets/vvz49-logo.png', alt: 'VVZ’49' }),
+      el('p', { class: 'placeholder-team', text: d.teamnaam }),
+      el('p', { class: 'placeholder-msg', text: 'Er is nog geen teamfoto voor dit team beschikbaar in SportLink.' })
+    ])
   ]);
 }
 
