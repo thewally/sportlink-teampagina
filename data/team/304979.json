@@ -1,0 +1,279 @@
+{
+ "teamcode": 304979,
+ "teamnaam": "ST SO Soest/VVZ'49 O14-2",
+ "competities": [
+  {
+   "teamcode": 304979,
+   "teamnaam": "ST SO Soest/VVZ'49 O14-2",
+   "poulecode": 838297,
+   "competitienaam": "0355 Onder 14 Zwaluwen Jeugd (1e fase A-Cat)",
+   "klasse": "Hoofdklasse Zwaluwen Jeugd (1e fase A-cat)",
+   "poule": "E",
+   "klassepoule": "Hoofdklasse Zwaluwen Jeugd (1e fase A-cat) E",
+   "spelsoort": "Veld Algemeen/Zaterdag",
+   "competitiesoort": "regulier",
+   "geslacht": "man",
+   "teamsoort": "bond",
+   "leeftijdscategorie": "Onder 14",
+   "speeldag": "Zaterdag",
+   "speeldagteam": "zaterdag speeldag"
+  },
+  {
+   "teamcode": 304979,
+   "teamnaam": "ST SO Soest/VVZ'49 O14-2",
+   "poulecode": null,
+   "competitienaam": null,
+   "klasse": null,
+   "poule": null,
+   "klassepoule": null,
+   "spelsoort": "Veld Algemeen",
+   "competitiesoort": "-",
+   "geslacht": "man",
+   "teamsoort": "lokaal",
+   "leeftijdscategorie": "Onder 14",
+   "speeldag": "Zaterdag",
+   "speeldagteam": "zaterdag speeldag"
+  }
+ ],
+ "hoofdcompetitie": {
+  "teamcode": 304979,
+  "teamnaam": "ST SO Soest/VVZ'49 O14-2",
+  "poulecode": 838297,
+  "competitienaam": "0355 Onder 14 Zwaluwen Jeugd (1e fase A-Cat)",
+  "klasse": "Hoofdklasse Zwaluwen Jeugd (1e fase A-cat)",
+  "poule": "E",
+  "klassepoule": "Hoofdklasse Zwaluwen Jeugd (1e fase A-cat) E",
+  "spelsoort": "Veld Algemeen/Zaterdag",
+  "competitiesoort": "regulier",
+  "geslacht": "man",
+  "teamsoort": "bond",
+  "leeftijdscategorie": "Onder 14",
+  "speeldag": "Zaterdag",
+  "speeldagteam": "zaterdag speeldag"
+ },
+ "details": {
+  "teamnaam": "ST SO Soest/VVZ'49 O14-2",
+  "begindatum": null,
+  "einddatum": null,
+  "competitie": "",
+  "geslacht": "man",
+  "categorie": "Veld Algemeen/Zaterdag",
+  "shirtkleur": null,
+  "broekkleur": null,
+  "kousen": null,
+  "omschrijving": null
+ },
+ "staf": [
+  {
+   "naam": "Blom, Ad",
+   "rol": "Overige staf",
+   "functie": "Teammanager"
+  },
+  {
+   "naam": "Floor, Melanie",
+   "rol": "Overige staf",
+   "functie": "Teammanager"
+  },
+  {
+   "naam": "Frolich, Jos",
+   "rol": "Overige staf",
+   "functie": "Teammanager"
+  },
+  {
+   "naam": "Leij- van der Velden, Marja van der",
+   "rol": "Overige staf",
+   "functie": "Teammanager"
+  },
+  {
+   "naam": "Wassenaar, Jeffry",
+   "rol": "Overige staf",
+   "functie": "Teammanager"
+  },
+  {
+   "naam": "Poelmans, Luuk",
+   "rol": "Technische staf",
+   "functie": "Trainer/coach"
+  }
+ ],
+ "spelers": [
+  {
+   "naam": "Boulonois, Silven",
+   "rol": "Teamspeler",
+   "functie": ""
+  },
+  {
+   "naam": "Canoz, Seymen",
+   "rol": "Teamspeler",
+   "functie": ""
+  },
+  {
+   "naam": "Ledden, Jip van",
+   "rol": "Teamspeler",
+   "functie": ""
+  },
+  {
+   "naam": "Mastenbroek, Finn",
+   "rol": "Teamspeler",
+   "functie": ""
+  },
+  {
+   "naam": "Morkoc, Mert",
+   "rol": "Teamspeler",
+   "functie": "Keeper"
+  },
+  {
+   "naam": "Sijtsma, Aron",
+   "rol": "Teamspeler",
+   "functie": ""
+  },
+  {
+   "naam": "Uittenbosch, Rosalie",
+   "rol": "Teamspeler",
+   "functie": "Keeper"
+  },
+  {
+   "naam": "Voortjes, Teun",
+   "rol": "Teamspeler",
+   "functie": ""
+  },
+  {
+   "naam": "Wassenaar, Sem",
+   "rol": "Teamspeler",
+   "functie": ""
+  }
+ ],
+ "staf_afgeschermd": 0,
+ "spelers_afgeschermd": 17,
+ "programma": [
+  {
+   "wedstrijdcode": 20841513,
+   "wedstrijddatum": "2026-10-03T10:15:00+0200",
+   "datum": "3 okt.",
+   "aanvangstijd": "10:15",
+   "wedstrijd": "ST SO Soest/VVZ'49 O14-2 - Altius O14-1",
+   "thuisteam": "ST SO Soest/VVZ'49 O14-2",
+   "uitteam": "Altius O14-1",
+   "accommodatie": "Sportpark Zonnegloren",
+   "veld": "veld 2",
+   "plaats": "SOEST",
+   "status": "Te spelen",
+   "competitiesoort": "regulier",
+   "klassepoule": "Hoofdklasse Zwaluwen Jeugd (1e fase A-cat) E"
+  },
+  {
+   "wedstrijdcode": 21114380,
+   "wedstrijddatum": "2026-10-10T11:15:00+0200",
+   "datum": "10 okt.",
+   "aanvangstijd": "11:15",
+   "wedstrijd": "ST SO Soest/VVZ'49 O14-2 - ?",
+   "thuisteam": "ST SO Soest/VVZ'49 O14-2",
+   "uitteam": "?",
+   "accommodatie": "Sportpark Bosstraat-Oost",
+   "veld": "veld 5 SO Soest",
+   "plaats": "SOEST",
+   "status": "Te spelen",
+   "competitiesoort": "Oefenwedstrijd",
+   "klassepoule": ""
+  }
+ ],
+ "uitslagen": [
+  {
+   "wedstrijdcode": 20832952,
+   "wedstrijddatum": "2026-09-26T09:15:00+0200",
+   "datumopgemaakt": "26 sep.",
+   "wedstrijd": "Saestum O14-1 - ST SO Soest/VVZ'49 O14-2",
+   "uitslag": "5 - 2",
+   "thuisteam": "Saestum O14-1",
+   "uitteam": "ST SO Soest/VVZ'49 O14-2",
+   "accommodatie": "Sportpark Saestum",
+   "status": "Uitgespeeld",
+   "competitiesoort": "regulier"
+  }
+ ],
+ "poulestand": [
+  {
+   "positie": 1,
+   "teamnaam": "Hercules O14-1",
+   "gespeeldewedstrijden": 4,
+   "gewonnen": 3,
+   "gelijk": 1,
+   "verloren": 0,
+   "doelpuntenvoor": 19,
+   "doelpuntentegen": 6,
+   "doelsaldo": 13,
+   "verliespunten": 0,
+   "punten": 10,
+   "eigenteam": "false"
+  },
+  {
+   "positie": 2,
+   "teamnaam": "Sporting '70 O14-1JM",
+   "gespeeldewedstrijden": 4,
+   "gewonnen": 3,
+   "gelijk": 1,
+   "verloren": 0,
+   "doelpuntenvoor": 15,
+   "doelpuntentegen": 2,
+   "doelsaldo": 13,
+   "verliespunten": 0,
+   "punten": 10,
+   "eigenteam": "false"
+  },
+  {
+   "positie": 3,
+   "teamnaam": "Saestum O14-1",
+   "gespeeldewedstrijden": 3,
+   "gewonnen": 1,
+   "gelijk": 1,
+   "verloren": 1,
+   "doelpuntenvoor": 7,
+   "doelpuntentegen": 7,
+   "doelsaldo": 0,
+   "verliespunten": 0,
+   "punten": 4,
+   "eigenteam": "false"
+  },
+  {
+   "positie": 4,
+   "teamnaam": "Wasmeer O14-1",
+   "gespeeldewedstrijden": 3,
+   "gewonnen": 1,
+   "gelijk": 1,
+   "verloren": 1,
+   "doelpuntenvoor": 6,
+   "doelpuntentegen": 10,
+   "doelsaldo": -4,
+   "verliespunten": 0,
+   "punten": 4,
+   "eigenteam": "false"
+  },
+  {
+   "positie": 5,
+   "teamnaam": "Altius O14-1",
+   "gespeeldewedstrijden": 4,
+   "gewonnen": 0,
+   "gelijk": 2,
+   "verloren": 2,
+   "doelpuntenvoor": 3,
+   "doelpuntentegen": 12,
+   "doelsaldo": -9,
+   "verliespunten": 0,
+   "punten": 2,
+   "eigenteam": "false"
+  },
+  {
+   "positie": 6,
+   "teamnaam": "ST SO Soest/VVZ'49 O14-2",
+   "gespeeldewedstrijden": 4,
+   "gewonnen": 0,
+   "gelijk": 0,
+   "verloren": 4,
+   "doelpuntenvoor": 5,
+   "doelpuntentegen": 18,
+   "doelsaldo": -13,
+   "verliespunten": 0,
+   "punten": 0,
+   "eigenteam": "true"
+  }
+ ]
+}

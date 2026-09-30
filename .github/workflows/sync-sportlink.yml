@@ -1,0 +1,43 @@
+name: Sync SportLink data
+
+on:
+  schedule:
+    # Twee keer per dag (UTC): 04:10 en 16:10.
+    - cron: '10 4,16 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync-sportlink
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Sync SportLink data
+        env:
+          SPORTLINK_CLIENT_ID: ${{ secrets.SPORTLINK_CLIENT_ID }}
+        run: python3 scripts/sync.py
+
+      - name: Commit changed data
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data
+          if git diff --cached --quiet; then
+            echo "Geen wijzigingen in data/ — niets te committen."
+          else
+            git commit -m "chore(data): sync SportLink teamdata $(date -u +'%Y-%m-%d %H:%M UTC')"
+            git push
+          fi

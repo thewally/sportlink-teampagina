@@ -1,0 +1,208 @@
+{
+ "teamcode": 304987,
+ "teamnaam": "ST SO Soest/VVZ'49 O14-6",
+ "competities": [
+  {
+   "teamcode": 304987,
+   "teamnaam": "ST SO Soest/VVZ'49 O14-6",
+   "poulecode": 839271,
+   "competitienaam": "0389 Onder 14 Zwaluwen Jeugd (1e fase)",
+   "klasse": "4e klasse Zwaluwen Jeugd (1e fase)",
+   "poule": "11",
+   "klassepoule": "4e klasse Zwaluwen Jeugd (1e fase) 11",
+   "spelsoort": "Veld Algemeen/Zaterdag",
+   "competitiesoort": "regulier",
+   "geslacht": "man",
+   "teamsoort": "bond",
+   "leeftijdscategorie": "Onder 14",
+   "speeldag": "Zaterdag",
+   "speeldagteam": "zaterdag speeldag"
+  }
+ ],
+ "hoofdcompetitie": {
+  "teamcode": 304987,
+  "teamnaam": "ST SO Soest/VVZ'49 O14-6",
+  "poulecode": 839271,
+  "competitienaam": "0389 Onder 14 Zwaluwen Jeugd (1e fase)",
+  "klasse": "4e klasse Zwaluwen Jeugd (1e fase)",
+  "poule": "11",
+  "klassepoule": "4e klasse Zwaluwen Jeugd (1e fase) 11",
+  "spelsoort": "Veld Algemeen/Zaterdag",
+  "competitiesoort": "regulier",
+  "geslacht": "man",
+  "teamsoort": "bond",
+  "leeftijdscategorie": "Onder 14",
+  "speeldag": "Zaterdag",
+  "speeldagteam": "zaterdag speeldag"
+ },
+ "details": {
+  "teamnaam": "ST SO Soest/VVZ'49 O14-6",
+  "begindatum": null,
+  "einddatum": null,
+  "competitie": "",
+  "geslacht": "man",
+  "categorie": "Veld Algemeen/Zaterdag",
+  "shirtkleur": null,
+  "broekkleur": null,
+  "kousen": null,
+  "omschrijving": null
+ },
+ "staf": [
+  {
+   "naam": "Blom, Ad",
+   "rol": "Overige staf",
+   "functie": "Teammanager"
+  },
+  {
+   "naam": "Frolich, Jos",
+   "rol": "Overige staf",
+   "functie": "Teammanager"
+  },
+  {
+   "naam": "Leij- van der Velden, Marja van der",
+   "rol": "Overige staf",
+   "functie": "Teammanager"
+  },
+  {
+   "naam": "Broekhuis, Han",
+   "rol": "Technische staf",
+   "functie": "Trainer"
+  },
+  {
+   "naam": "Wal, Arjen vd",
+   "rol": "Technische staf",
+   "functie": "Trainer/coach"
+  }
+ ],
+ "spelers": [
+  {
+   "naam": "Brouwer, Hewie",
+   "rol": "Teamspeler",
+   "functie": ""
+  },
+  {
+   "naam": "Saei, Kiarash",
+   "rol": "Teamspeler",
+   "functie": ""
+  }
+ ],
+ "staf_afgeschermd": 0,
+ "spelers_afgeschermd": 15,
+ "programma": [
+  {
+   "wedstrijdcode": 20832352,
+   "wedstrijddatum": "2026-10-03T10:10:00+0200",
+   "datum": "3 okt.",
+   "aanvangstijd": "10:10",
+   "wedstrijd": "Hercules O14-5 - ST SO Soest/VVZ'49 O14-6",
+   "thuisteam": "Hercules O14-5",
+   "uitteam": "ST SO Soest/VVZ'49 O14-6",
+   "accommodatie": "Sportpark Voordorp",
+   "veld": "veld 5-Hercules",
+   "plaats": "UTRECHT",
+   "status": "Te spelen",
+   "competitiesoort": "regulier",
+   "klassepoule": "4e klasse Zwaluwen Jeugd (1e fase) 11"
+  }
+ ],
+ "uitslagen": [
+  {
+   "wedstrijdcode": 20850331,
+   "wedstrijddatum": "2026-09-26T09:00:00+0200",
+   "datumopgemaakt": "26 sep.",
+   "wedstrijd": "KVVA O14-1 - ST SO Soest/VVZ'49 O14-6",
+   "uitslag": "2 - 14",
+   "thuisteam": "KVVA O14-1",
+   "uitteam": "ST SO Soest/VVZ'49 O14-6",
+   "accommodatie": "Sportpark Dollardstraat",
+   "status": "Uitgespeeld",
+   "competitiesoort": "regulier"
+  }
+ ],
+ "poulestand": [
+  {
+   "positie": 1,
+   "teamnaam": "ST SO Soest/VVZ'49 O14-6",
+   "gespeeldewedstrijden": 4,
+   "gewonnen": 4,
+   "gelijk": 0,
+   "verloren": 0,
+   "doelpuntenvoor": 36,
+   "doelpuntentegen": 4,
+   "doelsaldo": 32,
+   "verliespunten": 0,
+   "punten": 12,
+   "eigenteam": "true"
+  },
+  {
+   "positie": 2,
+   "teamnaam": "KVVA O14-1",
+   "gespeeldewedstrijden": 3,
+   "gewonnen": 2,
+   "gelijk": 0,
+   "verloren": 1,
+   "doelpuntenvoor": 20,
+   "doelpuntentegen": 23,
+   "doelsaldo": -3,
+   "verliespunten": 0,
+   "punten": 6,
+   "eigenteam": "false"
+  },
+  {
+   "positie": 3,
+   "teamnaam": "Hercules O14-5",
+   "gespeeldewedstrijden": 3,
+   "gewonnen": 1,
+   "gelijk": 1,
+   "verloren": 1,
+   "doelpuntenvoor": 22,
+   "doelpuntentegen": 12,
+   "doelsaldo": 10,
+   "verliespunten": 0,
+   "punten": 4,
+   "eigenteam": "false"
+  },
+  {
+   "positie": 4,
+   "teamnaam": "Kampong O14-5",
+   "gespeeldewedstrijden": 4,
+   "gewonnen": 1,
+   "gelijk": 1,
+   "verloren": 2,
+   "doelpuntenvoor": 15,
+   "doelpuntentegen": 18,
+   "doelsaldo": -3,
+   "verliespunten": 0,
+   "punten": 4,
+   "eigenteam": "false"
+  },
+  {
+   "positie": 5,
+   "teamnaam": "Sporting '70 O14-5",
+   "gespeeldewedstrijden": 4,
+   "gewonnen": 1,
+   "gelijk": 1,
+   "verloren": 2,
+   "doelpuntenvoor": 9,
+   "doelpuntentegen": 18,
+   "doelsaldo": -9,
+   "verliespunten": 0,
+   "punten": 4,
+   "eigenteam": "false"
+  },
+  {
+   "positie": 6,
+   "teamnaam": "Bunnik '73 O14-3",
+   "gespeeldewedstrijden": 4,
+   "gewonnen": 0,
+   "gelijk": 1,
+   "verloren": 3,
+   "doelpuntenvoor": 10,
+   "doelpuntentegen": 37,
+   "doelsaldo": -27,
+   "verliespunten": 0,
+   "punten": 1,
+   "eigenteam": "false"
+  }
+ ]
+}

@@ -1,0 +1,35 @@
+{
+ "aantal": 3,
+ "teams": [
+  {
+   "teamcode": 289917,
+   "teamnaam": "ST SO Soest/VVZ'49 O14-1",
+   "competitienaam": "0355 Onder 14 Zwaluwen Jeugd (1e fase A-Cat)",
+   "klasse": "Hoofdklasse Zwaluwen Jeugd (1e fase A-cat)",
+   "klassepoule": "Hoofdklasse Zwaluwen Jeugd (1e fase A-cat) A",
+   "leeftijdscategorie": "Onder 14",
+   "geslacht": "man",
+   "speeldag": "Zaterdag"
+  },
+  {
+   "teamcode": 304979,
+   "teamnaam": "ST SO Soest/VVZ'49 O14-2",
+   "competitienaam": "0355 Onder 14 Zwaluwen Jeugd (1e fase A-Cat)",
+   "klasse": "Hoofdklasse Zwaluwen Jeugd (1e fase A-cat)",
+   "klassepoule": "Hoofdklasse Zwaluwen Jeugd (1e fase A-cat) E",
+   "leeftijdscategorie": "Onder 14",
+   "geslacht": "man",
+   "speeldag": "Zaterdag"
+  },
+  {
+   "teamcode": 304987,
+   "teamnaam": "ST SO Soest/VVZ'49 O14-6",
+   "competitienaam": "0389 Onder 14 Zwaluwen Jeugd (1e fase)",
+   "klasse": "4e klasse Zwaluwen Jeugd (1e fase)",
+   "klassepoule": "4e klasse Zwaluwen Jeugd (1e fase) 11",
+   "leeftijdscategorie": "Onder 14",
+   "geslacht": "man",
+   "speeldag": "Zaterdag"
+  }
+ ]
+}
