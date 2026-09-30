@@ -22,7 +22,7 @@ body {
 a { color: var(--green); }
 a:hover { text-decoration: underline; }
 
-#app { max-width: var(--max); margin: 24px auto 0; padding: 0; }
+#app { max-width: var(--max); margin: 0 auto; padding: 0; }
 footer { max-width: var(--max); margin: 0 auto; padding: 0 16px; }
 
 .loading { padding: 32px 0 0 16px; color: var(--muted); }
