@@ -9,6 +9,8 @@
   "uitteam": "Valleivogels O14-1",
   "accommodatie": "Sportpark Zonnegloren",
   "status": "Uitgespeeld",
-  "competitiesoort": "regulier"
+  "competitiesoort": "regulier",
+  "thuisteamLogo": "data/logos/185BE097AE2F6645AF8AAA77D9C88EBF.png",
+  "uitteamLogo": "data/logos/B95C6F5708E69733500E58148AE36962.png"
  }
 ]

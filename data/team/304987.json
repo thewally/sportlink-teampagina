@@ -17,6 +17,22 @@
    "leeftijdscategorie": "Onder 14",
    "speeldag": "Zaterdag",
    "speeldagteam": "zaterdag speeldag"
+  },
+  {
+   "teamcode": 304987,
+   "teamnaam": "ST SO Soest/VVZ'49 O14-6",
+   "poulecode": null,
+   "competitienaam": "",
+   "klasse": "",
+   "poule": "",
+   "klassepoule": "",
+   "spelsoort": "Veld Algemeen/Zaterdag",
+   "competitiesoort": "-",
+   "geslacht": "man",
+   "teamsoort": "bond",
+   "leeftijdscategorie": "",
+   "speeldag": "Zaterdag",
+   "speeldagteam": "zaterdag speeldag"
   }
  ],
  "hoofdcompetitie": {
@@ -45,8 +61,10 @@
   "shirtkleur": null,
   "broekkleur": null,
   "kousen": null,
-  "omschrijving": null
+  "omschrijving": null,
+  "foto": "data/photos/304987.jpg"
  },
+ "ownLogo": "data/logos/185BE097AE2F6645AF8AAA77D9C88EBF.png",
  "staf": [
   {
    "naam": "Blom, Ad",
@@ -102,7 +120,9 @@
    "plaats": "UTRECHT",
    "status": "Te spelen",
    "competitiesoort": "regulier",
-   "klassepoule": "4e klasse Zwaluwen Jeugd (1e fase) 11"
+   "klassepoule": "4e klasse Zwaluwen Jeugd (1e fase) 11",
+   "thuisteamLogo": "data/logos/B527D8745EE41EBF1BE900F7156AD05E.png",
+   "uitteamLogo": "data/logos/185BE097AE2F6645AF8AAA77D9C88EBF.png"
   }
  ],
  "uitslagen": [
@@ -116,7 +136,9 @@
    "uitteam": "ST SO Soest/VVZ'49 O14-6",
    "accommodatie": "Sportpark Dollardstraat",
    "status": "Uitgespeeld",
-   "competitiesoort": "regulier"
+   "competitiesoort": "regulier",
+   "thuisteamLogo": "data/logos/1482B4703D423A094B43DEDA658384E4.png",
+   "uitteamLogo": "data/logos/185BE097AE2F6645AF8AAA77D9C88EBF.png"
   }
  ],
  "poulestand": [
@@ -132,7 +154,8 @@
    "doelsaldo": 32,
    "verliespunten": 0,
    "punten": 12,
-   "eigenteam": "true"
+   "eigenteam": "true",
+   "logo": "data/logos/185BE097AE2F6645AF8AAA77D9C88EBF.png"
   },
   {
    "positie": 2,
@@ -146,7 +169,8 @@
    "doelsaldo": -3,
    "verliespunten": 0,
    "punten": 6,
-   "eigenteam": "false"
+   "eigenteam": "false",
+   "logo": "data/logos/1482B4703D423A094B43DEDA658384E4.png"
   },
   {
    "positie": 3,
@@ -160,7 +184,8 @@
    "doelsaldo": 10,
    "verliespunten": 0,
    "punten": 4,
-   "eigenteam": "false"
+   "eigenteam": "false",
+   "logo": "data/logos/B527D8745EE41EBF1BE900F7156AD05E.png"
   },
   {
    "positie": 4,
@@ -174,7 +199,8 @@
    "doelsaldo": -3,
    "verliespunten": 0,
    "punten": 4,
-   "eigenteam": "false"
+   "eigenteam": "false",
+   "logo": "data/logos/5552296FCD1A2EEBCAD5B5ECD1927EF5.png"
   },
   {
    "positie": 5,
@@ -188,7 +214,8 @@
    "doelsaldo": -9,
    "verliespunten": 0,
    "punten": 4,
-   "eigenteam": "false"
+   "eigenteam": "false",
+   "logo": "data/logos/F24051DDD56D9D1448203D80D00E20A2.png"
   },
   {
    "positie": 6,
@@ -202,7 +229,8 @@
    "doelsaldo": -27,
    "verliespunten": 0,
    "punten": 1,
-   "eigenteam": "false"
+   "eigenteam": "false",
+   "logo": "data/logos/D4BD5C1D9D85DEBCED6C001A36F3B643.png"
   }
  ]
 }

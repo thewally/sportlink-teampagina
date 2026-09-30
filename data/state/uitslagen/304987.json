@@ -9,6 +9,8 @@
   "uitteam": "ST SO Soest/VVZ'49 O14-6",
   "accommodatie": "Sportpark Dollardstraat",
   "status": "Uitgespeeld",
-  "competitiesoort": "regulier"
+  "competitiesoort": "regulier",
+  "thuisteamLogo": "data/logos/1482B4703D423A094B43DEDA658384E4.png",
+  "uitteamLogo": "data/logos/185BE097AE2F6645AF8AAA77D9C88EBF.png"
  }
 ]

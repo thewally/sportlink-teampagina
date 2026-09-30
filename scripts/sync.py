@@ -9,8 +9,10 @@ Usage:
     SPORTLINK_CLIENT_ID=xxxxxxxx python3 scripts/sync.py
 """
 
+import base64
 import json
 import os
+import re
 import sys
 import time
 import urllib.error
@@ -19,6 +21,7 @@ import urllib.request
 from pathlib import Path
 
 BASE = "https://data.sportlink.com"
+BINARIES = "https://binaries.sportlink.com"
 
 # Deze site toont bewust maar drie teams: de ST-combiteams van SO Soest en
 # VVZ'49. Ze worden op teamnaam geselecteerd uit /teams (teamcodes wisselen per
@@ -33,13 +36,19 @@ ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
 TEAM_DIR = DATA / "team"
 STATE_DIR = DATA / "state" / "uitslagen"
+LOGO_DIR = DATA / "logos"
+PHOTO_DIR = DATA / "photos"
 
 RETRIES = 3
 SLEEP = 0.15
 
-# Fields copied verbatim; everything else (logo URLs with expiring signatures,
-# "more"/"meer" links containing query strings, personal contact details) is
-# dropped on purpose: it either churns on every run or is privacy sensitive.
+# Fields copied verbatim; "more"/"meer" links (query strings) and personal
+# contact details are dropped on purpose (privacy / never useful to us).
+# Logo fields are handled separately by resolve_logo(): the SportLink CDN
+# URLs carry an expiring signature that would churn on every sync even
+# though the image itself doesn't change, so we cache the image bytes
+# locally under data/logos/<document-id>.<ext> (the document id in the URL
+# path is stable across signatures) and store that local path instead.
 PROGRAMMA_FIELDS = (
     "wedstrijdcode", "wedstrijddatum", "datum", "aanvangstijd", "wedstrijd",
     "thuisteam", "uitteam", "accommodatie", "veld", "plaats", "status",
@@ -180,6 +189,74 @@ def write_json(path: Path, payload) -> None:
     )
 
 
+DOC_ID_RE = re.compile(r"/([A-F0-9]{16,})(?:[/?]|$)", re.IGNORECASE)
+CONTENT_TYPE_EXT = {
+    "image/png": "png", "image/jpeg": "jpg", "image/jpg": "jpg",
+    "image/svg+xml": "svg", "image/webp": "webp", "image/gif": "gif",
+}
+_logo_cache: dict[str, str | None] = {}
+
+
+def resolve_logo(url) -> str | None:
+    """Download a club-logo URL once and cache it locally by its stable
+    document id, returning a site-relative path ("data/logos/<id>.<ext>")
+    or None. The URL's own query string (expiry/signature) is ignored for
+    caching purposes since only the path's document id is stable."""
+    if not isinstance(url, str) or not url.startswith(BINARIES):
+        return None
+    m = DOC_ID_RE.search(url)
+    if not m:
+        return None
+    doc_id = m.group(1).upper()
+    if doc_id in _logo_cache:
+        return _logo_cache[doc_id]
+
+    existing = list(LOGO_DIR.glob(f"{doc_id}.*")) if LOGO_DIR.exists() else []
+    if existing:
+        rel = f"data/logos/{existing[0].name}"
+        _logo_cache[doc_id] = rel
+        return rel
+
+    for attempt in range(1, RETRIES + 1):
+        try:
+            req = urllib.request.Request(
+                url, headers={"User-Agent": "sportlink-teampagina/1.0"}
+            )
+            with urllib.request.urlopen(req, timeout=30) as resp:
+                body = resp.read()
+                ctype = (resp.headers.get("Content-Type") or "").split(";")[0].strip()
+            ext = CONTENT_TYPE_EXT.get(ctype, "png")
+            LOGO_DIR.mkdir(parents=True, exist_ok=True)
+            (LOGO_DIR / f"{doc_id}.{ext}").write_bytes(body)
+            rel = f"data/logos/{doc_id}.{ext}"
+            _logo_cache[doc_id] = rel
+            return rel
+        except (urllib.error.URLError, TimeoutError) as exc:
+            if attempt == RETRIES:
+                print(f"  ! logo download failed ({doc_id}): {exc}", file=sys.stderr)
+                _logo_cache[doc_id] = None
+                return None
+            time.sleep(attempt * 0.5)
+    return None
+
+
+def save_teamfoto(teamcode, b64_data) -> str | None:
+    """Decode a base64 team photo from team-gegevens and save it once per
+    sync run (the API re-sends it unchanged every time there is one, so we
+    just overwrite — no need to diff-check base64 text)."""
+    if not b64_data:
+        return None
+    try:
+        raw = base64.b64decode(b64_data, validate=False)
+    except (ValueError, base64.binascii.Error) as exc:
+        print(f"  ! kon teamfoto van {teamcode} niet decoderen: {exc}", file=sys.stderr)
+        return None
+    PHOTO_DIR.mkdir(parents=True, exist_ok=True)
+    path = PHOTO_DIR / f"{teamcode}.jpg"
+    path.write_bytes(raw)
+    return f"data/photos/{teamcode}.jpg"
+
+
 def main() -> int:
     cid = client_id()
 
@@ -231,34 +308,55 @@ def main() -> int:
 
         details_raw = get("team-gegevens", cid, teamcode=teamcode, lokaleteamcode=-1)
         details = {}
+        foto = None
         if isinstance(details_raw, dict) and isinstance(details_raw.get("team"), dict):
-            details = pick(details_raw["team"], DETAIL_FIELDS)
+            team_raw = details_raw["team"]
+            details = pick(team_raw, DETAIL_FIELDS)
+            foto = save_teamfoto(teamcode, team_raw.get("teamfoto"))
+        details["foto"] = foto
 
         programma_raw = get(
             "programma", cid, teamcode=teamcode, eigenwedstrijden="JA", thuis="JA",
             uit="JA", gebruiklokaleteamgegevens="NEE", aantaldagen=365,
         )
-        programma = [pick(w, PROGRAMMA_FIELDS) for w in (programma_raw or [])]
+        programma = []
+        for w in (programma_raw or []):
+            row = pick(w, PROGRAMMA_FIELDS)
+            row["thuisteamLogo"] = resolve_logo(w.get("thuisteamlogo"))
+            row["uitteamLogo"] = resolve_logo(w.get("uitteamlogo"))
+            programma.append(row)
         programma.sort(key=lambda r: (r.get("wedstrijddatum") or ""))
 
         uitslagen_raw = get(
             "uitslagen", cid, teamcode=teamcode, eigenwedstrijden="JA", thuis="JA",
             uit="JA", gebruiklokaleteamgegevens="NEE",
         )
-        uitslagen = merge_uitslagen(
-            teamcode, [pick(w, UITSLAGEN_FIELDS) for w in (uitslagen_raw or [])]
-        )
+        fresh_uitslagen = []
+        for w in (uitslagen_raw or []):
+            row = pick(w, UITSLAGEN_FIELDS)
+            row["thuisteamLogo"] = resolve_logo(w.get("thuisteamlogo"))
+            row["uitteamLogo"] = resolve_logo(w.get("uitteamlogo"))
+            fresh_uitslagen.append(row)
+        uitslagen = merge_uitslagen(teamcode, fresh_uitslagen)
 
         poulecode = main_entry.get("poulecode")
         poulestand = []
         if poulecode and poulecode != -1:
             if poulecode not in poule_cache:
                 rows = get("poulestand", cid, poulecode=poulecode)
-                poule_cache[poulecode] = [
-                    pick(r, POULESTAND_FIELDS) for r in (rows or [])
-                ]
+                cached = []
+                for r in (rows or []):
+                    row = pick(r, POULESTAND_FIELDS)
+                    row["logo"] = resolve_logo(r.get("clublogo"))
+                    cached.append(row)
+                poule_cache[poulecode] = cached
                 time.sleep(SLEEP)
             poulestand = poule_cache[poulecode]
+
+        own_logo = next(
+            (r["logo"] for r in poulestand if str(r.get("eigenteam")) == "true" and r.get("logo")),
+            None,
+        )
 
         if members is None and programma_raw is None and uitslagen_raw is None:
             failed += 1
@@ -271,6 +369,7 @@ def main() -> int:
             "competities": entries,
             "hoofdcompetitie": main_entry,
             "details": details,
+            "ownLogo": own_logo,
             "staf": staf,
             "spelers": spelers,
             "staf_afgeschermd": staf_shield,

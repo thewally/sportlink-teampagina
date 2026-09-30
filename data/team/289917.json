@@ -22,6 +22,22 @@
    "teamcode": 289917,
    "teamnaam": "ST SO Soest/VVZ'49 O14-1",
    "poulecode": null,
+   "competitienaam": "",
+   "klasse": "",
+   "poule": "",
+   "klassepoule": "",
+   "spelsoort": "Veld Algemeen/Zaterdag",
+   "competitiesoort": "-",
+   "geslacht": "man",
+   "teamsoort": "bond",
+   "leeftijdscategorie": "",
+   "speeldag": "Zaterdag",
+   "speeldagteam": "zaterdag speeldag"
+  },
+  {
+   "teamcode": 289917,
+   "teamnaam": "ST SO Soest/VVZ'49 O14-1",
+   "poulecode": null,
    "competitienaam": null,
    "klasse": null,
    "poule": null,
@@ -61,8 +77,10 @@
   "shirtkleur": null,
   "broekkleur": null,
   "kousen": null,
-  "omschrijving": null
+  "omschrijving": null,
+  "foto": null
  },
+ "ownLogo": "data/logos/185BE097AE2F6645AF8AAA77D9C88EBF.png",
  "staf": [
   {
    "naam": "Berg, Frans van den",
@@ -173,7 +191,9 @@
    "plaats": "SOEST",
    "status": "Te spelen",
    "competitiesoort": "regulier",
-   "klassepoule": "Hoofdklasse Zwaluwen Jeugd (1e fase A-cat) A"
+   "klassepoule": "Hoofdklasse Zwaluwen Jeugd (1e fase A-cat) A",
+   "thuisteamLogo": "data/logos/185BE097AE2F6645AF8AAA77D9C88EBF.png",
+   "uitteamLogo": "data/logos/5B9B2A60D6F9ACFC66508688FDC5AB0C.png"
   },
   {
    "wedstrijdcode": 21100623,
@@ -188,7 +208,9 @@
    "plaats": "SOEST",
    "status": "Te spelen",
    "competitiesoort": "Oefenwedstrijd",
-   "klassepoule": ""
+   "klassepoule": "",
+   "thuisteamLogo": "data/logos/185BE097AE2F6645AF8AAA77D9C88EBF.png",
+   "uitteamLogo": null
   }
  ],
  "uitslagen": [
@@ -202,7 +224,9 @@
    "uitteam": "Valleivogels O14-1",
    "accommodatie": "Sportpark Zonnegloren",
    "status": "Uitgespeeld",
-   "competitiesoort": "regulier"
+   "competitiesoort": "regulier",
+   "thuisteamLogo": "data/logos/185BE097AE2F6645AF8AAA77D9C88EBF.png",
+   "uitteamLogo": "data/logos/B95C6F5708E69733500E58148AE36962.png"
   }
  ],
  "poulestand": [
@@ -218,7 +242,8 @@
    "doelsaldo": 13,
    "verliespunten": 0,
    "punten": 12,
-   "eigenteam": "true"
+   "eigenteam": "true",
+   "logo": "data/logos/185BE097AE2F6645AF8AAA77D9C88EBF.png"
   },
   {
    "positie": 2,
@@ -232,7 +257,8 @@
    "doelsaldo": 17,
    "verliespunten": 0,
    "punten": 9,
-   "eigenteam": "false"
+   "eigenteam": "false",
+   "logo": "data/logos/B95C6F5708E69733500E58148AE36962.png"
   },
   {
    "positie": 3,
@@ -246,7 +272,8 @@
    "doelsaldo": 0,
    "verliespunten": 0,
    "punten": 5,
-   "eigenteam": "false"
+   "eigenteam": "false",
+   "logo": "data/logos/5B9B2A60D6F9ACFC66508688FDC5AB0C.png"
   },
   {
    "positie": 4,
@@ -260,7 +287,8 @@
    "doelsaldo": -1,
    "verliespunten": 0,
    "punten": 4,
-   "eigenteam": "false"
+   "eigenteam": "false",
+   "logo": "data/logos/108D4BC5E81F2A24CE339D1206A7080B.png"
   },
   {
    "positie": 5,
@@ -274,7 +302,8 @@
    "doelsaldo": -6,
    "verliespunten": 0,
    "punten": 4,
-   "eigenteam": "false"
+   "eigenteam": "false",
+   "logo": "data/logos/BF31C4009F5F7716F6A23AC815E0DDEC.png"
   },
   {
    "positie": 6,
@@ -288,7 +317,8 @@
    "doelsaldo": -23,
    "verliespunten": 0,
    "punten": 0,
-   "eigenteam": "false"
+   "eigenteam": "false",
+   "logo": "data/logos/F3E59A770BBDC1A430DCCB87F78AF9FB.png"
   }
  ]
 }
