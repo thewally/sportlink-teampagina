@@ -168,8 +168,6 @@ function render(nodes) {
 
 function renderTeam(d) {
   var hoofd = d.hoofdcompetitie || {};
-  var subtitle = [hoofd.competitienaam, hoofd.klassepoule || hoofd.klasse]
-    .filter(Boolean).join(' — ');
 
   document.title = d.teamnaam;
 
@@ -177,9 +175,7 @@ function renderTeam(d) {
 
   /* 1. Teamtitel */
   nodes.push(el('header', { class: 'team-header' }, [
-    el('h1', { class: 'bar', text: d.teamnaam }),
-    subtitle ? el('p', { class: 'subtitle', text: subtitle }) : null,
-    el('p', { class: 'backlink' }, [el('a', { href: '.', text: '← Alle teams' })])
+    el('h1', { class: 'bar', text: d.teamnaam })
   ]));
 
   /* Teamfoto (of de "nog geen foto" leegstand) */

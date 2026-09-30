@@ -22,23 +22,7 @@ body {
 a { color: var(--green); }
 a:hover { text-decoration: underline; }
 
-.topbar {
-  background: var(--green);
-  color: #fff;
-  padding: 14px 16px;
-  margin-bottom: 24px;
-}
-.topbar-inner {
-  max-width: var(--max);
-  margin: 0 auto;
-  display: flex;
-  align-items: baseline;
-  gap: 8px;
-}
-.topbar a { color: #fff; text-decoration: none; font-weight: 700; font-size: 16px; }
-.topbar span { color: rgba(255, 255, 255, 0.8); font-size: 13px; }
-
-#app { max-width: var(--max); margin: 0 auto; padding: 0; }
+#app { max-width: var(--max); margin: 24px auto 0; padding: 0; }
 footer { max-width: var(--max); margin: 0 auto; padding: 0 16px; }
 
 .loading { padding: 32px 0 0 16px; color: var(--muted); }
@@ -54,6 +38,7 @@ footer { max-width: var(--max); margin: 0 auto; padding: 0 16px; }
   font-weight: 700;
   line-height: 1.2;
 }
+.team-header h1.bar { text-align: center; }
 .subtitle {
   margin: 8px 0 0;
   padding: 0 16px;
