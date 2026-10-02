@@ -194,23 +194,6 @@
    "klassepoule": "Hoofdklasse Zwaluwen Jeugd (1e fase A-cat) A",
    "thuisteamLogo": "data/logos/185BE097AE2F6645AF8AAA77D9C88EBF.png",
    "uitteamLogo": "data/logos/5B9B2A60D6F9ACFC66508688FDC5AB0C.png"
-  },
-  {
-   "wedstrijdcode": 21100623,
-   "wedstrijddatum": "2026-10-10T11:30:00+0200",
-   "datum": "10 okt.",
-   "aanvangstijd": "11:30",
-   "wedstrijd": "ST SO Soest/VVZ'49 O14-1 - HBOK 014-1",
-   "thuisteam": "ST SO Soest/VVZ'49 O14-1",
-   "uitteam": "HBOK 014-1",
-   "accommodatie": "Sportpark Bosstraat-Oost",
-   "veld": "veld 2-SO Soest",
-   "plaats": "SOEST",
-   "status": "Te spelen",
-   "competitiesoort": "Oefenwedstrijd",
-   "klassepoule": "",
-   "thuisteamLogo": "data/logos/185BE097AE2F6645AF8AAA77D9C88EBF.png",
-   "uitteamLogo": null
   }
  ],
  "uitslagen": [
