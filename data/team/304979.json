@@ -164,23 +164,6 @@
  "spelers_afgeschermd": 17,
  "programma": [
   {
-   "wedstrijdcode": 20841513,
-   "wedstrijddatum": "2026-10-03T10:15:00+0200",
-   "datum": "3 okt.",
-   "aanvangstijd": "10:15",
-   "wedstrijd": "ST SO Soest/VVZ'49 O14-2 - Altius O14-1",
-   "thuisteam": "ST SO Soest/VVZ'49 O14-2",
-   "uitteam": "Altius O14-1",
-   "accommodatie": "Sportpark Zonnegloren",
-   "veld": "veld 2",
-   "plaats": "SOEST",
-   "status": "Te spelen",
-   "competitiesoort": "regulier",
-   "klassepoule": "Hoofdklasse Zwaluwen Jeugd (1e fase A-cat) E",
-   "thuisteamLogo": "data/logos/185BE097AE2F6645AF8AAA77D9C88EBF.png",
-   "uitteamLogo": "data/logos/2C6AF7F1405175C9956CD2D8BBC0E054.png"
-  },
-  {
    "wedstrijdcode": 21114380,
    "wedstrijddatum": "2026-10-10T11:15:00+0200",
    "datum": "10 okt.",

@@ -106,25 +106,7 @@
  ],
  "staf_afgeschermd": 0,
  "spelers_afgeschermd": 15,
- "programma": [
-  {
-   "wedstrijdcode": 20832352,
-   "wedstrijddatum": "2026-10-03T10:10:00+0200",
-   "datum": "3 okt.",
-   "aanvangstijd": "10:10",
-   "wedstrijd": "Hercules O14-5 - ST SO Soest/VVZ'49 O14-6",
-   "thuisteam": "Hercules O14-5",
-   "uitteam": "ST SO Soest/VVZ'49 O14-6",
-   "accommodatie": "Sportpark Voordorp",
-   "veld": "veld 5-Hercules",
-   "plaats": "UTRECHT",
-   "status": "Te spelen",
-   "competitiesoort": "regulier",
-   "klassepoule": "4e klasse Zwaluwen Jeugd (1e fase) 11",
-   "thuisteamLogo": "data/logos/B527D8745EE41EBF1BE900F7156AD05E.png",
-   "uitteamLogo": "data/logos/185BE097AE2F6645AF8AAA77D9C88EBF.png"
-  }
- ],
+ "programma": [],
  "uitslagen": [
   {
    "wedstrijdcode": 20850331,
