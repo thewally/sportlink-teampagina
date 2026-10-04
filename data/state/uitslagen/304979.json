@@ -1,5 +1,19 @@
 [
  {
+  "wedstrijdcode": 20841513,
+  "wedstrijddatum": "2026-10-03T10:15:00+0200",
+  "datumopgemaakt": "3 okt.",
+  "wedstrijd": "ST SO Soest/VVZ'49 O14-2 - Altius O14-1",
+  "uitslag": "1 - 4",
+  "thuisteam": "ST SO Soest/VVZ'49 O14-2",
+  "uitteam": "Altius O14-1",
+  "accommodatie": "Sportpark Zonnegloren",
+  "status": "Uitgespeeld",
+  "competitiesoort": "regulier",
+  "thuisteamLogo": "data/logos/185BE097AE2F6645AF8AAA77D9C88EBF.png",
+  "uitteamLogo": "data/logos/2C6AF7F1405175C9956CD2D8BBC0E054.png"
+ },
+ {
   "wedstrijdcode": 20832952,
   "wedstrijddatum": "2026-09-26T09:15:00+0200",
   "datumopgemaakt": "26 sep.",

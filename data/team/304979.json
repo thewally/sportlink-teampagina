@@ -183,6 +183,20 @@
  ],
  "uitslagen": [
   {
+   "wedstrijdcode": 20841513,
+   "wedstrijddatum": "2026-10-03T10:15:00+0200",
+   "datumopgemaakt": "3 okt.",
+   "wedstrijd": "ST SO Soest/VVZ'49 O14-2 - Altius O14-1",
+   "uitslag": "1 - 4",
+   "thuisteam": "ST SO Soest/VVZ'49 O14-2",
+   "uitteam": "Altius O14-1",
+   "accommodatie": "Sportpark Zonnegloren",
+   "status": "Uitgespeeld",
+   "competitiesoort": "regulier",
+   "thuisteamLogo": "data/logos/185BE097AE2F6645AF8AAA77D9C88EBF.png",
+   "uitteamLogo": "data/logos/2C6AF7F1405175C9956CD2D8BBC0E054.png"
+  },
+  {
    "wedstrijdcode": 20832952,
    "wedstrijddatum": "2026-09-26T09:15:00+0200",
    "datumopgemaakt": "26 sep.",
@@ -230,6 +244,21 @@
   },
   {
    "positie": 3,
+   "teamnaam": "Altius O14-1",
+   "gespeeldewedstrijden": 5,
+   "gewonnen": 1,
+   "gelijk": 2,
+   "verloren": 2,
+   "doelpuntenvoor": 7,
+   "doelpuntentegen": 13,
+   "doelsaldo": -6,
+   "verliespunten": 0,
+   "punten": 5,
+   "eigenteam": "false",
+   "logo": "data/logos/2C6AF7F1405175C9956CD2D8BBC0E054.png"
+  },
+  {
+   "positie": 4,
    "teamnaam": "Saestum O14-1",
    "gespeeldewedstrijden": 4,
    "gewonnen": 1,
@@ -244,7 +273,7 @@
    "logo": "data/logos/9C911B1C90946183B9FE70EDF9F14AD3.png"
   },
   {
-   "positie": 4,
+   "positie": 5,
    "teamnaam": "Wasmeer O14-1",
    "gespeeldewedstrijden": 4,
    "gewonnen": 1,
@@ -259,30 +288,15 @@
    "logo": "data/logos/E2751DDCEE0B3BCA00F9966853744A2F.png"
   },
   {
-   "positie": 5,
-   "teamnaam": "Altius O14-1",
-   "gespeeldewedstrijden": 4,
-   "gewonnen": 0,
-   "gelijk": 2,
-   "verloren": 2,
-   "doelpuntenvoor": 3,
-   "doelpuntentegen": 12,
-   "doelsaldo": -9,
-   "verliespunten": 0,
-   "punten": 2,
-   "eigenteam": "false",
-   "logo": "data/logos/2C6AF7F1405175C9956CD2D8BBC0E054.png"
-  },
-  {
    "positie": 6,
    "teamnaam": "ST SO Soest/VVZ'49 O14-2",
-   "gespeeldewedstrijden": 4,
+   "gespeeldewedstrijden": 5,
    "gewonnen": 0,
    "gelijk": 0,
-   "verloren": 4,
-   "doelpuntenvoor": 5,
-   "doelpuntentegen": 18,
-   "doelsaldo": -13,
+   "verloren": 5,
+   "doelpuntenvoor": 6,
+   "doelpuntentegen": 22,
+   "doelsaldo": -16,
    "verliespunten": 0,
    "punten": 0,
    "eigenteam": "true",

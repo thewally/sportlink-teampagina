@@ -1,5 +1,19 @@
 [
  {
+  "wedstrijdcode": 20832352,
+  "wedstrijddatum": "2026-10-03T10:10:00+0200",
+  "datumopgemaakt": "3 okt.",
+  "wedstrijd": "Hercules O14-5 - ST SO Soest/VVZ'49 O14-6",
+  "uitslag": "2 - 9",
+  "thuisteam": "Hercules O14-5",
+  "uitteam": "ST SO Soest/VVZ'49 O14-6",
+  "accommodatie": "Sportpark Voordorp",
+  "status": "Uitgespeeld",
+  "competitiesoort": "regulier",
+  "thuisteamLogo": "data/logos/B527D8745EE41EBF1BE900F7156AD05E.png",
+  "uitteamLogo": "data/logos/185BE097AE2F6645AF8AAA77D9C88EBF.png"
+ },
+ {
   "wedstrijdcode": 20850331,
   "wedstrijddatum": "2026-09-26T09:00:00+0200",
   "datumopgemaakt": "26 sep.",
