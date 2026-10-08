@@ -125,32 +125,7 @@
    "functie": ""
   },
   {
-   "naam": "Chang, Milan",
-   "rol": "Teamspeler",
-   "functie": ""
-  },
-  {
-   "naam": "Engelbertink, Bram",
-   "rol": "Teamspeler",
-   "functie": ""
-  },
-  {
    "naam": "Ledden, Jip van",
-   "rol": "Teamspeler",
-   "functie": ""
-  },
-  {
-   "naam": "Mastenbroek, Finn",
-   "rol": "Teamspeler",
-   "functie": ""
-  },
-  {
-   "naam": "Morkoc, Mert",
-   "rol": "Teamspeler",
-   "functie": ""
-  },
-  {
-   "naam": "Rensen, Stijn",
    "rol": "Teamspeler",
    "functie": ""
   },
@@ -163,20 +138,10 @@
    "naam": "Uittenbosch, Rosalie",
    "rol": "Teamspeler",
    "functie": ""
-  },
-  {
-   "naam": "Voortjes, Teun",
-   "rol": "Teamspeler",
-   "functie": ""
-  },
-  {
-   "naam": "Wassenaar, Sem",
-   "rol": "Teamspeler",
-   "functie": ""
   }
  ],
  "staf_afgeschermd": 0,
- "spelers_afgeschermd": 16,
+ "spelers_afgeschermd": 11,
  "programma": [
   {
    "wedstrijdcode": 20838600,

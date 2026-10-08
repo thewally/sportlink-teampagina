@@ -108,6 +108,16 @@
    "functie": "Teammanager"
   },
   {
+   "naam": "Jasperse, Sil",
+   "rol": "Technische staf",
+   "functie": "Trainer"
+  },
+  {
+   "naam": "Steman, Niek",
+   "rol": "Technische staf",
+   "functie": "Trainer"
+  },
+  {
    "naam": "Poelmans, Luuk",
    "rol": "Technische staf",
    "functie": "Trainer/coach"
@@ -115,17 +125,12 @@
  ],
  "spelers": [
   {
-   "naam": "Boulonois, Silven",
+   "naam": "Chang, Milan",
    "rol": "Teamspeler",
    "functie": ""
   },
   {
-   "naam": "Canoz, Seymen",
-   "rol": "Teamspeler",
-   "functie": ""
-  },
-  {
-   "naam": "Ledden, Jip van",
+   "naam": "Engelbertink, Bram",
    "rol": "Teamspeler",
    "functie": ""
   },
@@ -140,14 +145,9 @@
    "functie": "Keeper"
   },
   {
-   "naam": "Sijtsma, Aron",
+   "naam": "Rensen, Stijn",
    "rol": "Teamspeler",
    "functie": ""
-  },
-  {
-   "naam": "Uittenbosch, Rosalie",
-   "rol": "Teamspeler",
-   "functie": "Keeper"
   },
   {
    "naam": "Voortjes, Teun",
@@ -161,7 +161,7 @@
   }
  ],
  "staf_afgeschermd": 0,
- "spelers_afgeschermd": 17,
+ "spelers_afgeschermd": 7,
  "programma": [
   {
    "wedstrijdcode": 21114380,
