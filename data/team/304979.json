@@ -162,25 +162,7 @@
  ],
  "staf_afgeschermd": 0,
  "spelers_afgeschermd": 7,
- "programma": [
-  {
-   "wedstrijdcode": 21114380,
-   "wedstrijddatum": "2026-10-10T11:15:00+0200",
-   "datum": "10 okt.",
-   "aanvangstijd": "11:15",
-   "wedstrijd": "ST SO Soest/VVZ'49 O14-2 - ?",
-   "thuisteam": "ST SO Soest/VVZ'49 O14-2",
-   "uitteam": "?",
-   "accommodatie": "Sportpark Bosstraat-Oost",
-   "veld": "veld 5 SO Soest",
-   "plaats": "SOEST",
-   "status": "Te spelen",
-   "competitiesoort": "Oefenwedstrijd",
-   "klassepoule": "",
-   "thuisteamLogo": "data/logos/185BE097AE2F6645AF8AAA77D9C88EBF.png",
-   "uitteamLogo": null
-  }
- ],
+ "programma": [],
  "uitslagen": [
   {
    "wedstrijdcode": 20841513,
