@@ -142,12 +142,26 @@ def split_indeling(members):
     return staf, spelers, staf_afgeschermd, spelers_afgeschermd
 
 
+FASE_RE = re.compile(r"\((\d+)e fase", re.IGNORECASE)
+
+
 def primary_entry(entries):
-    """The 'regulier' competition entry decides name/poule; else the first one."""
-    for e in entries:
-        if (e.get("competitiesoort") or "").strip() == "regulier":
-            return e
-    return entries[0]
+    """The 'regulier' competition entry decides name/poule; else the first one.
+
+    A team can have multiple 'regulier' rows at once once a new season phase
+    (bv. "2e fase") is published alongside the still-present "1e fase" row.
+    Pick the highest fase number so a newly announced indeling shows up right
+    away instead of waiting for the old phase's row to disappear.
+    """
+    regulier = [e for e in entries if (e.get("competitiesoort") or "").strip() == "regulier"]
+    if not regulier:
+        return entries[0]
+
+    def fase(e):
+        m = FASE_RE.search(e.get("competitienaam") or "")
+        return int(m.group(1)) if m else -1
+
+    return max(regulier, key=fase)
 
 
 def merge_uitslagen(teamcode: int, fresh: list) -> list:
