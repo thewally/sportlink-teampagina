@@ -145,23 +145,31 @@ def split_indeling(members):
 FASE_RE = re.compile(r"\((\d+)e fase", re.IGNORECASE)
 
 
-def primary_entry(entries):
-    """The 'regulier' competition entry decides name/poule; else the first one.
+def fase_nummer(entry):
+    """Het fasenummer uit competitienaam, bv. 2 uit "...(2e fase A-cat)"."""
+    m = FASE_RE.search(entry.get("competitienaam") or "")
+    return int(m.group(1)) if m else -1
 
-    A team can have multiple 'regulier' rows at once once a new season phase
-    (bv. "2e fase") is published alongside the still-present "1e fase" row.
-    Pick the highest fase number so a newly announced indeling shows up right
-    away instead of waiting for the old phase's row to disappear.
-    """
+
+def regulier_entries(entries):
+    """Alle 'regulier' rijen, gesorteerd van oudste naar nieuwste fase."""
     regulier = [e for e in entries if (e.get("competitiesoort") or "").strip() == "regulier"]
+    return sorted(regulier, key=fase_nummer)
+
+
+def primary_entry(entries):
+    """De 'regulier' rij van de nieuwste fase bepaalt naam/poule; anders de eerste rij.
+
+    Een team kan meerdere 'regulier' rijen tegelijk hebben zodra een nieuwe
+    seizoensfase (bv. "2e fase") bekendgemaakt wordt naast de nog aanwezige
+    "1e fase" rij. Pak het hoogste fasenummer zodat een nieuw bekendgemaakte
+    indeling direct verschijnt in plaats van te wachten tot de oude fase-rij
+    verdwijnt.
+    """
+    regulier = regulier_entries(entries)
     if not regulier:
         return entries[0]
-
-    def fase(e):
-        m = FASE_RE.search(e.get("competitienaam") or "")
-        return int(m.group(1)) if m else -1
-
-    return max(regulier, key=fase)
+    return regulier[-1]
 
 
 def merge_uitslagen(teamcode: int, fresh: list) -> list:
@@ -353,9 +361,15 @@ def main() -> int:
             fresh_uitslagen.append(row)
         uitslagen = merge_uitslagen(teamcode, fresh_uitslagen)
 
-        poulecode = main_entry.get("poulecode")
-        poulestand = []
-        if poulecode and poulecode != -1:
+        # Eén poulestand per fase (1e fase, 2e fase, ...), niet alleen de
+        # nieuwste: na de fase-overgang blijft de oude stand het hele
+        # seizoen relevant om terug te kijken.
+        poulestanden = []
+        own_logo = None
+        for entry in regulier_entries(entries):
+            poulecode = entry.get("poulecode")
+            if not poulecode or poulecode == -1:
+                continue
             if poulecode not in poule_cache:
                 rows = get("poulestand", cid, poulecode=poulecode)
                 cached = []
@@ -365,12 +379,20 @@ def main() -> int:
                     cached.append(row)
                 poule_cache[poulecode] = cached
                 time.sleep(SLEEP)
-            poulestand = poule_cache[poulecode]
-
-        own_logo = next(
-            (r["logo"] for r in poulestand if str(r.get("eigenteam")) == "true" and r.get("logo")),
-            None,
-        )
+            stand = poule_cache[poulecode]
+            poulestanden.append({
+                "poulecode": poulecode,
+                "competitienaam": entry.get("competitienaam"),
+                "klasse": entry.get("klasse"),
+                "poule": entry.get("poule"),
+                "klassepoule": entry.get("klassepoule"),
+                "stand": stand,
+            })
+            if own_logo is None:
+                own_logo = next(
+                    (r["logo"] for r in stand if str(r.get("eigenteam")) == "true" and r.get("logo")),
+                    None,
+                )
 
         if members is None and programma_raw is None and uitslagen_raw is None:
             failed += 1
@@ -390,7 +412,7 @@ def main() -> int:
             "spelers_afgeschermd": spelers_shield,
             "programma": programma,
             "uitslagen": uitslagen,
-            "poulestand": poulestand,
+            "poulestanden": poulestanden,
         })
 
         index.append({

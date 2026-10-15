@@ -50,6 +50,17 @@ footer { max-width: var(--max); margin: 0 auto; padding: 0 16px; }
 /* sections */
 .card { margin: 0 0 28px; }
 
+/* poulestand per fase (1e fase, 2e fase, ...) */
+.poule-fase { margin: 0 0 20px; }
+.poule-fase:last-child { margin-bottom: 0; }
+.poule-fase-titel {
+  margin: 0 0 4px;
+  padding: 0 16px;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--muted);
+}
+
 /* tables */
 .table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; margin-top: 2px; }
 table { width: 100%; border-collapse: collapse; font-size: 14px; }

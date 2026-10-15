@@ -216,22 +216,28 @@ function renderTeam(d) {
       : empty('Geen informatie')
   ]));
 
-  /* 6. Poulestanden */
-  var stand = d.poulestand || [];
-  var pouleTitel = 'Poulestanden ' + d.teamnaam +
-    (hoofd.klassepoule ? ' ( ' + hoofd.klassepoule + ' )' : '');
+  /* 6. Poulestanden — één tabel per fase (1e fase, 2e fase, ...) */
+  var poulestanden = d.poulestanden || [];
+  var pouleTitel = 'Poulestanden ' + d.teamnaam;
   nodes.push(section(pouleTitel, [
-    stand.length
-      ? table(
-          ['Positie', '', 'Team', 'GS', 'GW', 'GL', 'VL', 'V', 'T', 'Doelsaldo', 'PT'],
-          stand.map(function (r) {
-            return [r.positie, logoImg(r.logo, r.teamnaam), r.teamnaam,
-              r.gespeeldewedstrijden, r.gewonnen, r.gelijk, r.verloren,
-              r.doelpuntenvoor, r.doelpuntentegen, r.doelsaldo, r.punten];
-          })
-        )
+    poulestanden.length
+      ? el('div', null, poulestanden.map(function (ps) {
+          return el('div', { class: 'poule-fase' }, [
+            el('h3', { class: 'poule-fase-titel', text: ps.klassepoule || ps.competitienaam || '' }),
+            table(
+              ['Positie', '', 'Team', 'GS', 'GW', 'GL', 'VL', 'V', 'T', 'Doelsaldo', 'PT'],
+              (ps.stand || []).map(function (r) {
+                return [r.positie, logoImg(r.logo, r.teamnaam), r.teamnaam,
+                  r.gespeeldewedstrijden, r.gewonnen, r.gelijk, r.verloren,
+                  r.doelpuntenvoor, r.doelpuntentegen, r.doelsaldo, r.punten];
+              })
+            )
+          ]);
+        }))
       : empty('Geen informatie')
   ]));
+  /* Stats verderop gebruiken de stand van de huidige (nieuwste) fase. */
+  var stand = poulestanden.length ? poulestanden[poulestanden.length - 1].stand : [];
 
   /* 7. Team indeling */
   nodes.push(section('Team indeling', [

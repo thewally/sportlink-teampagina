@@ -103,8 +103,15 @@ python3 -m http.server 8000
 
 `sync.py` gebruikt alleen de Python-standaardbibliotheek (`urllib`), dus geen
 `pip install` nodig. Eén team komt meerdere keren voor in `/teams` (één rij per
-competitie, bv. `regulier` naast `beker`); de rij met `competitiesoort == "regulier"`
-bepaalt de teamnaam en de `poulecode` voor de poulestand, met de eerste rij als fallback.
+competitie, bv. `regulier` naast `beker`, en soms zelfs **meerdere** `regulier`-rijen
+tegelijk zodra een nieuwe seizoensfase bekendgemaakt wordt naast de nog aanwezige vorige
+fase). De `regulier`-rij met het hoogste fasenummer (uit `competitienaam`, bv. "2e fase")
+bepaalt de teamnaam en de `klassepoule` op de teamtitel, met de eerste rij als fallback
+als er geen fasenummer te vinden is. Voor **Poulestanden** haalt `sync.py` juist élke
+`regulier`-fase op (niet alleen de nieuwste) en schrijft die als lijst naar
+`poulestanden` in `data/team/<teamcode>.json`, zodat de teampagina de standen van het
+hele seizoen laat zien — oudste fase eerst. **Stats** blijft rekenen met de stand van de
+nieuwste fase.
 Teams met `teamcode -1` (lokale, niet-bondse teams) worden overgeslagen: bij `/programma`
 en `/uitslagen` werkt `teamcode=-1` als wildcard en levert dan clubbrede data op.
 
