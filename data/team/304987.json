@@ -109,14 +109,14 @@
  "programma": [
   {
    "wedstrijdcode": 21135838,
-   "wedstrijddatum": "2026-10-31T10:15:00+0100",
+   "wedstrijddatum": "2026-10-31T10:00:00+0100",
    "datum": "31 okt.",
-   "aanvangstijd": "10:15",
+   "aanvangstijd": "10:00",
    "wedstrijd": "Victoria O14-4 - ST SO Soest/VVZ'49 O14-6",
    "thuisteam": "Victoria O14-4",
    "uitteam": "ST SO Soest/VVZ'49 O14-6",
    "accommodatie": "Sportpark Loosdrecht",
-   "veld": "veld 2-BZC'13  - GRAS BZC",
+   "veld": "veld 5-Victoria",
    "plaats": "LOOSDRECHT",
    "status": "Te spelen",
    "competitiesoort": "regulier",
