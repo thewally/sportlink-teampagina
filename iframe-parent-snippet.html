@@ -1,0 +1,20 @@
+<!-- Plak dit in de WordPress-pagina die de iframe bevat (bv. in een "Aangepaste HTML"-blok),
+     naast de <iframe>. Het script luistert naar de hoogte die iframe-resize.js meldt
+     en zet die op de juiste iframe. Gebaseerd op
+     https://jacobfilipp.com/iframe-height-autoresize-crossdomain/ (MIT, (c) 2019 Jacob Filipp). -->
+<script>
+window.addEventListener("message", function (event) {
+  // Alleen berichten van de teampagina's accepteren
+  if (event.origin !== "https://thewally.github.io") return;
+  if (!event.data || typeof event.data.height !== "number") return;
+
+  var frames = document.querySelectorAll("iframe");
+  for (var i = 0; i < frames.length; i++) {
+    if (frames[i].contentWindow === event.source) {
+      frames[i].style.height = event.data.height + "px";
+      frames[i].removeAttribute("height");
+      return;
+    }
+  }
+});
+</script>
