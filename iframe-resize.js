@@ -3,7 +3,7 @@
 // https://jacobfilipp.com/iframe-height-autoresize-crossdomain/ (MIT, (c) 2019 Jacob Filipp),
 // maar met een ResizeObserver i.p.v. MutationObserver: die vangt ook late layoutwijzigingen
 // (afbeeldingen, fonts, tabellen na het laden van de JSON, window-resize) en laat de iframe
-// ook weer krimpen. De parent-kant staat in README.md.
+// ook weer krimpen. De parent-kant staat in iframe-parent-snippet.html.
 
 (function () {
   if (window.parent === window) return; // niet in een iframe: niets te doen
