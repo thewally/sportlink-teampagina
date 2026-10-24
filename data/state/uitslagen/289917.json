@@ -1,5 +1,19 @@
 [
  {
+  "wedstrijdcode": 21136374,
+  "wedstrijddatum": "2026-10-24T09:45:00+0200",
+  "datumopgemaakt": "24 okt.",
+  "wedstrijd": "Huizen O14-1 - ST SO Soest/VVZ'49 O14-1",
+  "uitslag": "2 - 3",
+  "thuisteam": "Huizen O14-1",
+  "uitteam": "ST SO Soest/VVZ'49 O14-1",
+  "accommodatie": "Sportpark Wolfskamer",
+  "status": "Uitgespeeld",
+  "competitiesoort": "regulier",
+  "thuisteamLogo": "data/logos/2F73FA391CA71716D8A28B6EA8DDE196.png",
+  "uitteamLogo": "data/logos/185BE097AE2F6645AF8AAA77D9C88EBF.png"
+ },
+ {
   "wedstrijdcode": 20838600,
   "wedstrijddatum": "2026-10-10T11:30:00+0200",
   "datumopgemaakt": "10 okt.",
