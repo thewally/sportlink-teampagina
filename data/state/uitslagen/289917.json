@@ -1,5 +1,19 @@
 [
  {
+  "wedstrijdcode": 21136192,
+  "wedstrijddatum": "2026-10-31T10:00:00+0100",
+  "datumopgemaakt": "31 okt.",
+  "wedstrijd": "ST SO Soest/VVZ'49 O14-1 - CJVV O14-1",
+  "uitslag": "3 - 0",
+  "thuisteam": "ST SO Soest/VVZ'49 O14-1",
+  "uitteam": "CJVV O14-1",
+  "accommodatie": "Sportpark Zonnegloren",
+  "status": "Uitgespeeld",
+  "competitiesoort": "regulier",
+  "thuisteamLogo": "data/logos/185BE097AE2F6645AF8AAA77D9C88EBF.png",
+  "uitteamLogo": "data/logos/5B9B2A60D6F9ACFC66508688FDC5AB0C.png"
+ },
+ {
   "wedstrijdcode": 21136374,
   "wedstrijddatum": "2026-10-24T09:45:00+0200",
   "datumopgemaakt": "24 okt.",
