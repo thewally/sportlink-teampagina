@@ -1,5 +1,19 @@
 [
  {
+  "wedstrijdcode": 21135838,
+  "wedstrijddatum": "2026-10-31T13:25:00+0100",
+  "datumopgemaakt": "31 okt.",
+  "wedstrijd": "Victoria O14-4 - ST SO Soest/VVZ'49 O14-6",
+  "uitslag": "1 - 4",
+  "thuisteam": "Victoria O14-4",
+  "uitteam": "ST SO Soest/VVZ'49 O14-6",
+  "accommodatie": "Sportpark Loosdrecht",
+  "status": "Uitgespeeld",
+  "competitiesoort": "regulier",
+  "thuisteamLogo": "data/logos/A7F44415D3F351F6C6D178E32F81DD4F.png",
+  "uitteamLogo": "data/logos/185BE097AE2F6645AF8AAA77D9C88EBF.png"
+ },
+ {
   "wedstrijdcode": 20832352,
   "wedstrijddatum": "2026-10-03T10:10:00+0200",
   "datumopgemaakt": "3 okt.",

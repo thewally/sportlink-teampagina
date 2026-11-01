@@ -212,6 +212,20 @@
  ],
  "uitslagen": [
   {
+   "wedstrijdcode": 21135838,
+   "wedstrijddatum": "2026-10-31T13:25:00+0100",
+   "datumopgemaakt": "31 okt.",
+   "wedstrijd": "Victoria O14-4 - ST SO Soest/VVZ'49 O14-6",
+   "uitslag": "1 - 4",
+   "thuisteam": "Victoria O14-4",
+   "uitteam": "ST SO Soest/VVZ'49 O14-6",
+   "accommodatie": "Sportpark Loosdrecht",
+   "status": "Uitgespeeld",
+   "competitiesoort": "regulier",
+   "thuisteamLogo": "data/logos/A7F44415D3F351F6C6D178E32F81DD4F.png",
+   "uitteamLogo": "data/logos/185BE097AE2F6645AF8AAA77D9C88EBF.png"
+  },
+  {
    "wedstrijdcode": 20832352,
    "wedstrijddatum": "2026-10-03T10:10:00+0200",
    "datumopgemaakt": "3 okt.",
@@ -364,6 +378,21 @@
     },
     {
      "positie": 2,
+     "teamnaam": "ST SO Soest/VVZ'49 O14-6",
+     "gespeeldewedstrijden": 1,
+     "gewonnen": 1,
+     "gelijk": 0,
+     "verloren": 0,
+     "doelpuntenvoor": 4,
+     "doelpuntentegen": 1,
+     "doelsaldo": 3,
+     "verliespunten": 0,
+     "punten": 3,
+     "eigenteam": "true",
+     "logo": "data/logos/185BE097AE2F6645AF8AAA77D9C88EBF.png"
+    },
+    {
+     "positie": 3,
      "teamnaam": "Baarn sv O14-2",
      "gespeeldewedstrijden": 1,
      "gewonnen": 1,
@@ -378,7 +407,7 @@
      "logo": "data/logos/4CF03A40AD7B7160C3D86267ACD0C85F.png"
     },
     {
-     "positie": 3,
+     "positie": 4,
      "teamnaam": "IJsselmeervogels O14-3",
      "gespeeldewedstrijden": 1,
      "gewonnen": 1,
@@ -393,37 +422,7 @@
      "logo": "data/logos/C6875A6D391E4AE28983CE221085F3E6.png"
     },
     {
-     "positie": 4,
-     "teamnaam": "ST SO Soest/VVZ'49 O14-6",
-     "gespeeldewedstrijden": 0,
-     "gewonnen": 0,
-     "gelijk": 0,
-     "verloren": 0,
-     "doelpuntenvoor": 0,
-     "doelpuntentegen": 0,
-     "doelsaldo": 0,
-     "verliespunten": 0,
-     "punten": 0,
-     "eigenteam": "true",
-     "logo": "data/logos/185BE097AE2F6645AF8AAA77D9C88EBF.png"
-    },
-    {
      "positie": 5,
-     "teamnaam": "Victoria O14-4",
-     "gespeeldewedstrijden": 0,
-     "gewonnen": 0,
-     "gelijk": 0,
-     "verloren": 0,
-     "doelpuntenvoor": 0,
-     "doelpuntentegen": 0,
-     "doelsaldo": 0,
-     "verliespunten": 0,
-     "punten": 0,
-     "eigenteam": "false",
-     "logo": "data/logos/A7F44415D3F351F6C6D178E32F81DD4F.png"
-    },
-    {
-     "positie": 6,
      "teamnaam": "Nieuwland ASC O14-2",
      "gespeeldewedstrijden": 1,
      "gewonnen": 0,
@@ -438,7 +437,7 @@
      "logo": "data/logos/BF31C4009F5F7716F6A23AC815E0DDEC.png"
     },
     {
-     "positie": 7,
+     "positie": 6,
      "teamnaam": "Hoogland O14-5",
      "gespeeldewedstrijden": 1,
      "gewonnen": 0,
@@ -451,6 +450,21 @@
      "punten": 0,
      "eigenteam": "false",
      "logo": "data/logos/F8948725BEF7E49215251457E65F88FA.png"
+    },
+    {
+     "positie": 7,
+     "teamnaam": "Victoria O14-4",
+     "gespeeldewedstrijden": 1,
+     "gewonnen": 0,
+     "gelijk": 0,
+     "verloren": 1,
+     "doelpuntenvoor": 1,
+     "doelpuntentegen": 4,
+     "doelsaldo": -3,
+     "verliespunten": 0,
+     "punten": 0,
+     "eigenteam": "false",
+     "logo": "data/logos/A7F44415D3F351F6C6D178E32F81DD4F.png"
     },
     {
      "positie": 8,
