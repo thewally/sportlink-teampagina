@@ -37,16 +37,16 @@
   {
    "teamcode": 289917,
    "teamnaam": "ST SO Soest/VVZ'49 O14-1",
-   "poulecode": null,
-   "competitienaam": "",
-   "klasse": "",
-   "poule": "",
-   "klassepoule": "",
+   "poulecode": 849905,
+   "competitienaam": "B9410 Zwaluwen Jeugd Beker Onder 14 1e ronde",
+   "klasse": "Zwaluwen Jeugd Beker O14 1e ronde Groep 1",
+   "poule": "Laatste 32",
+   "klassepoule": "Zwaluwen Jeugd Beker O14 1e ronde Groep 1 Laatste 32",
    "spelsoort": "Veld Algemeen/Zaterdag",
-   "competitiesoort": "-",
+   "competitiesoort": "beker",
    "geslacht": "man",
    "teamsoort": "bond",
-   "leeftijdscategorie": "",
+   "leeftijdscategorie": "Onder 14",
    "speeldag": "Zaterdag",
    "speeldagteam": "zaterdag speeldag"
   },
@@ -243,6 +243,23 @@
    "klassepoule": "Hoofdklasse (2e fase A-cat) B",
    "thuisteamLogo": "data/logos/185BE097AE2F6645AF8AAA77D9C88EBF.png",
    "uitteamLogo": "data/logos/E1E12846B3BD1D757A7C44046C155F67.png"
+  },
+  {
+   "wedstrijdcode": 21285397,
+   "wedstrijddatum": "2027-01-23T11:15:00+0100",
+   "datum": "23 jan.",
+   "aanvangstijd": "11:15",
+   "wedstrijd": "ST SO Soest/VVZ'49 O14-1 - SCPB'22 O14-2",
+   "thuisteam": "ST SO Soest/VVZ'49 O14-1",
+   "uitteam": "SCPB'22 O14-2",
+   "accommodatie": "Sportpark Bosstraat-Oost",
+   "veld": "veld 2-SO Soest",
+   "plaats": "SOEST",
+   "status": "Te spelen",
+   "competitiesoort": "beker",
+   "klassepoule": "Zwaluwen Jeugd Beker O14 1e ronde Groep 1 Laatste 32",
+   "thuisteamLogo": "data/logos/185BE097AE2F6645AF8AAA77D9C88EBF.png",
+   "uitteamLogo": "data/logos/A38871F6ACB1582416ACD7E7A50018EB.png"
   }
  ],
  "uitslagen": [
