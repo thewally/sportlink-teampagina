@@ -268,6 +268,20 @@
  ],
  "uitslagen": [
   {
+   "wedstrijdcode": 21134691,
+   "wedstrijddatum": "2026-11-07T13:15:00+0100",
+   "datumopgemaakt": "7 nov.",
+   "wedstrijd": "ST SO Soest/VVZ'49 O14-2 - BFC O14-3",
+   "uitslag": null,
+   "thuisteam": "ST SO Soest/VVZ'49 O14-2",
+   "uitteam": "BFC O14-3",
+   "accommodatie": "Sportpark Bosstraat-Oost",
+   "status": "Afgelast",
+   "competitiesoort": "regulier",
+   "thuisteamLogo": "data/logos/185BE097AE2F6645AF8AAA77D9C88EBF.png",
+   "uitteamLogo": "data/logos/4A531CECB811B615C0DB81382D1971E6.png"
+  },
+  {
    "wedstrijdcode": 21135430,
    "wedstrijddatum": "2026-10-31T11:30:00+0100",
    "datumopgemaakt": "31 okt.",
@@ -435,15 +449,15 @@
     {
      "positie": 2,
      "teamnaam": "Victoria O14-3",
-     "gespeeldewedstrijden": 1,
-     "gewonnen": 1,
+     "gespeeldewedstrijden": 2,
+     "gewonnen": 2,
      "gelijk": 0,
      "verloren": 0,
-     "doelpuntenvoor": 7,
-     "doelpuntentegen": 2,
-     "doelsaldo": 5,
+     "doelpuntenvoor": 10,
+     "doelpuntentegen": 4,
+     "doelsaldo": 6,
      "verliespunten": 0,
-     "punten": 3,
+     "punten": 6,
      "eigenteam": "false",
      "logo": "data/logos/A7F44415D3F351F6C6D178E32F81DD4F.png"
     },
@@ -479,21 +493,6 @@
     },
     {
      "positie": 5,
-     "teamnaam": "IJsselmeervogels O14-2",
-     "gespeeldewedstrijden": 1,
-     "gewonnen": 0,
-     "gelijk": 0,
-     "verloren": 1,
-     "doelpuntenvoor": 2,
-     "doelpuntentegen": 5,
-     "doelsaldo": -3,
-     "verliespunten": 0,
-     "punten": 0,
-     "eigenteam": "false",
-     "logo": "data/logos/C6875A6D391E4AE28983CE221085F3E6.png"
-    },
-    {
-     "positie": 6,
      "teamnaam": "BFC O14-3",
      "gespeeldewedstrijden": 1,
      "gewonnen": 0,
@@ -508,7 +507,7 @@
      "logo": "data/logos/4A531CECB811B615C0DB81382D1971E6.png"
     },
     {
-     "positie": 7,
+     "positie": 6,
      "teamnaam": "AS'80 O14-5",
      "gespeeldewedstrijden": 1,
      "gewonnen": 0,
@@ -523,7 +522,7 @@
      "logo": "data/logos/8E63A0268DD193C2417EEA01E36E34BD.png"
     },
     {
-     "positie": 8,
+     "positie": 7,
      "teamnaam": "ST SO Soest/VVZ'49 O14-2",
      "gespeeldewedstrijden": 1,
      "gewonnen": 0,
@@ -536,6 +535,21 @@
      "punten": 0,
      "eigenteam": "true",
      "logo": "data/logos/185BE097AE2F6645AF8AAA77D9C88EBF.png"
+    },
+    {
+     "positie": 8,
+     "teamnaam": "IJsselmeervogels O14-2",
+     "gespeeldewedstrijden": 2,
+     "gewonnen": 0,
+     "gelijk": 0,
+     "verloren": 2,
+     "doelpuntenvoor": 4,
+     "doelpuntentegen": 8,
+     "doelsaldo": -4,
+     "verliespunten": 0,
+     "punten": 0,
+     "eigenteam": "false",
+     "logo": "data/logos/C6875A6D391E4AE28983CE221085F3E6.png"
     }
    ]
   }
