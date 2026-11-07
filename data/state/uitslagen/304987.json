@@ -1,5 +1,19 @@
 [
  {
+  "wedstrijdcode": 21135061,
+  "wedstrijddatum": "2026-11-07T09:45:00+0100",
+  "datumopgemaakt": "7 nov.",
+  "wedstrijd": "ST SO Soest/VVZ'49 O14-6 - Hoogland O14-5",
+  "uitslag": "6 - 2",
+  "thuisteam": "ST SO Soest/VVZ'49 O14-6",
+  "uitteam": "Hoogland O14-5",
+  "accommodatie": "Sportpark Zonnegloren",
+  "status": "Uitgespeeld",
+  "competitiesoort": "regulier",
+  "thuisteamLogo": "data/logos/185BE097AE2F6645AF8AAA77D9C88EBF.png",
+  "uitteamLogo": "data/logos/F8948725BEF7E49215251457E65F88FA.png"
+ },
+ {
   "wedstrijdcode": 21135838,
   "wedstrijddatum": "2026-10-31T13:25:00+0100",
   "datumopgemaakt": "31 okt.",

@@ -1,5 +1,19 @@
 [
  {
+  "wedstrijdcode": 21136413,
+  "wedstrijddatum": "2026-11-07T10:00:00+0100",
+  "datumopgemaakt": "7 nov.",
+  "wedstrijd": "Nieuwland ASC O14-1 - ST SO Soest/VVZ'49 O14-1",
+  "uitslag": "2 - 1",
+  "thuisteam": "Nieuwland ASC O14-1",
+  "uitteam": "ST SO Soest/VVZ'49 O14-1",
+  "accommodatie": "Sportpark Nieuwland",
+  "status": "Uitgespeeld",
+  "competitiesoort": "regulier",
+  "thuisteamLogo": "data/logos/BF31C4009F5F7716F6A23AC815E0DDEC.png",
+  "uitteamLogo": "data/logos/185BE097AE2F6645AF8AAA77D9C88EBF.png"
+ },
+ {
   "wedstrijdcode": 21136192,
   "wedstrijddatum": "2026-10-31T10:00:00+0100",
   "datumopgemaakt": "31 okt.",
