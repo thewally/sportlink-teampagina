@@ -247,6 +247,23 @@
    "klassepoule": "1e klasse (2e fase) 06",
    "thuisteamLogo": "data/logos/185BE097AE2F6645AF8AAA77D9C88EBF.png",
    "uitteamLogo": "data/logos/4CF03A40AD7B7160C3D86267ACD0C85F.png"
+  },
+  {
+   "wedstrijdcode": 21134691,
+   "wedstrijddatum": "2026-12-19T09:45:00+0100",
+   "datum": "19 dec.",
+   "aanvangstijd": "09:45",
+   "wedstrijd": "ST SO Soest/VVZ'49 O14-2 - BFC O14-3",
+   "thuisteam": "ST SO Soest/VVZ'49 O14-2",
+   "uitteam": "BFC O14-3",
+   "accommodatie": "Sportpark Bosstraat-Oost",
+   "veld": "veld 1-SO Soest",
+   "plaats": "SOEST",
+   "status": "Te spelen",
+   "competitiesoort": "regulier",
+   "klassepoule": "1e klasse (2e fase) 06",
+   "thuisteamLogo": "data/logos/185BE097AE2F6645AF8AAA77D9C88EBF.png",
+   "uitteamLogo": "data/logos/4A531CECB811B615C0DB81382D1971E6.png"
   }
  ],
  "uitslagen": [
