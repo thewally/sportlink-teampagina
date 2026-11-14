@@ -1,5 +1,19 @@
 [
  {
+  "wedstrijdcode": 21136004,
+  "wedstrijddatum": "2026-11-14T11:30:00+0100",
+  "datumopgemaakt": "14 nov.",
+  "wedstrijd": "DOSC O14-1 - ST SO Soest/VVZ'49 O14-2",
+  "uitslag": "5 - 3",
+  "thuisteam": "DOSC O14-1",
+  "uitteam": "ST SO Soest/VVZ'49 O14-2",
+  "accommodatie": "Sportpark DOSC",
+  "status": "Uitgespeeld",
+  "competitiesoort": "regulier",
+  "thuisteamLogo": "data/logos/0B203FE1E8998F0FCA0C082FBC52650B.png",
+  "uitteamLogo": "data/logos/185BE097AE2F6645AF8AAA77D9C88EBF.png"
+ },
+ {
   "wedstrijdcode": 21134691,
   "wedstrijddatum": "2026-11-07T13:15:00+0100",
   "datumopgemaakt": "7 nov.",

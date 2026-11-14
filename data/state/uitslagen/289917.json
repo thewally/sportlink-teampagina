@@ -1,5 +1,19 @@
 [
  {
+  "wedstrijdcode": 21136389,
+  "wedstrijddatum": "2026-11-14T10:00:00+0100",
+  "datumopgemaakt": "14 nov.",
+  "wedstrijd": "ST SO Soest/VVZ'49 O14-1 - Wasmeer O14-1",
+  "uitslag": "13 - 0",
+  "thuisteam": "ST SO Soest/VVZ'49 O14-1",
+  "uitteam": "Wasmeer O14-1",
+  "accommodatie": "Sportpark Bosstraat-Oost",
+  "status": "Uitgespeeld",
+  "competitiesoort": "regulier",
+  "thuisteamLogo": "data/logos/185BE097AE2F6645AF8AAA77D9C88EBF.png",
+  "uitteamLogo": "data/logos/E2751DDCEE0B3BCA00F9966853744A2F.png"
+ },
+ {
   "wedstrijdcode": 21136413,
   "wedstrijddatum": "2026-11-07T10:00:00+0100",
   "datumopgemaakt": "7 nov.",
