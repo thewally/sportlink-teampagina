@@ -33,6 +33,22 @@
    "leeftijdscategorie": "Onder 14",
    "speeldag": "Zaterdag",
    "speeldagteam": "zaterdag speeldag"
+  },
+  {
+   "teamcode": 304987,
+   "teamnaam": "ST SO Soest/VVZ'49 O14-6",
+   "poulecode": 850236,
+   "competitienaam": "B9420 Zwaluwen Jeugd Beker Onder 14 2e ronde",
+   "klasse": "Zwaluwen Jeugd Beker O14 2e ronde Groep 3",
+   "poule": "2e ronde",
+   "klassepoule": "Zwaluwen Jeugd Beker O14 2e ronde Groep 3 2e ronde",
+   "spelsoort": "Veld Algemeen/Zaterdag",
+   "competitiesoort": "beker",
+   "geslacht": "man",
+   "teamsoort": "bond",
+   "leeftijdscategorie": "Onder 14",
+   "speeldag": "Zaterdag",
+   "speeldagteam": "zaterdag speeldag"
   }
  ],
  "hoofdcompetitie": {
@@ -143,9 +159,9 @@
   },
   {
    "wedstrijdcode": 21135569,
-   "wedstrijddatum": "2026-12-05T15:15:00+0100",
+   "wedstrijddatum": "2026-12-05T15:00:00+0100",
    "datum": "5 dec.",
-   "aanvangstijd": "15:15",
+   "aanvangstijd": "15:00",
    "wedstrijd": "Baarn sv O14-2 - ST SO Soest/VVZ'49 O14-6",
    "thuisteam": "Baarn sv O14-2",
    "uitteam": "ST SO Soest/VVZ'49 O14-6",
@@ -174,6 +190,23 @@
    "klassepoule": "3e klasse (2e fase) 12",
    "thuisteamLogo": "data/logos/185BE097AE2F6645AF8AAA77D9C88EBF.png",
    "uitteamLogo": "data/logos/C6875A6D391E4AE28983CE221085F3E6.png"
+  },
+  {
+   "wedstrijdcode": 21298777,
+   "wedstrijddatum": "2027-01-23T09:45:00+0100",
+   "datum": "23 jan.",
+   "aanvangstijd": "09:45",
+   "wedstrijd": "ST SO Soest/VVZ'49 O14-6 - DESTO O14-6",
+   "thuisteam": "ST SO Soest/VVZ'49 O14-6",
+   "uitteam": "DESTO O14-6",
+   "accommodatie": "Sportpark Zonnegloren",
+   "veld": "veld 1",
+   "plaats": "SOEST",
+   "status": "Te spelen",
+   "competitiesoort": "beker",
+   "klassepoule": "Zwaluwen Jeugd Beker O14 2e ronde Groep 3 2e ronde",
+   "thuisteamLogo": "data/logos/185BE097AE2F6645AF8AAA77D9C88EBF.png",
+   "uitteamLogo": "data/logos/4BED4B559B4884BFEB6EB5522B4DF926.png"
   }
  ],
  "uitslagen": [
