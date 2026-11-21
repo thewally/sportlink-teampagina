@@ -1,5 +1,19 @@
 [
  {
+  "wedstrijdcode": 21136046,
+  "wedstrijddatum": "2026-11-21T11:30:00+0100",
+  "datumopgemaakt": "21 nov.",
+  "wedstrijd": "ST SO Soest/VVZ'49 O14-2 - AS'80 O14-5",
+  "uitslag": "1 - 8",
+  "thuisteam": "ST SO Soest/VVZ'49 O14-2",
+  "uitteam": "AS'80 O14-5",
+  "accommodatie": "Sportpark Zonnegloren",
+  "status": "Uitgespeeld",
+  "competitiesoort": "regulier",
+  "thuisteamLogo": "data/logos/185BE097AE2F6645AF8AAA77D9C88EBF.png",
+  "uitteamLogo": "data/logos/8E63A0268DD193C2417EEA01E36E34BD.png"
+ },
+ {
   "wedstrijdcode": 21136004,
   "wedstrijddatum": "2026-11-14T11:30:00+0100",
   "datumopgemaakt": "14 nov.",
